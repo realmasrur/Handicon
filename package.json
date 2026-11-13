@@ -1,0 +1,24 @@
+{
+  "name": "handicon-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "icons": "node scripts/build-icons.mjs",
+    "dev": "npm run icons && next dev",
+    "build": "npm run icons && next build",
+    "start": "next start",
+    "pack:check": "npm run icons && npm pack ./package --dry-run",
+    "publish:pkg": "npm run icons && npm publish ./package"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}
