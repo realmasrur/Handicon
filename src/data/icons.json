@@ -1,1 +1,1773 @@
-
+{
+ "defaultStrokeWidth": 1.75,
+ "categories": [
+  "Communication",
+  "Files",
+  "Data",
+  "Media",
+  "Account",
+  "Developer",
+  "Interface",
+  "Actions",
+  "Arrows",
+  "Design"
+ ],
+ "icons": [
+  {
+   "name": "message",
+   "component": "Message",
+   "category": "Communication",
+   "tags": [
+    "chat",
+    "comment",
+    "bubble",
+    "talk"
+   ],
+   "body": "<path d=\"M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-4 3.5V17H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z\"/><circle cx=\"8\" cy=\"10.5\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"12\" cy=\"10.5\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16\" cy=\"10.5\" r=\"1\" fill=\"currentColor\" stroke=\"none\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-4 3.5V17H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "8",
+      "cy": "10.5",
+      "r": "1",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "10.5",
+      "r": "1",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "16",
+      "cy": "10.5",
+      "r": "1",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    }
+   ]
+  },
+  {
+   "name": "code",
+   "component": "Code",
+   "category": "Developer",
+   "tags": [
+    "developer",
+    "programming",
+    "brackets",
+    "html"
+   ],
+   "body": "<path d=\"m8 8-4 4 4 4\"/><path d=\"m16 8 4 4-4 4\"/><path d=\"m13.5 5-3 14\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m8 8-4 4 4 4"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m16 8 4 4-4 4"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m13.5 5-3 14"
+     }
+    }
+   ]
+  },
+  {
+   "name": "analytics",
+   "component": "Analytics",
+   "category": "Data",
+   "tags": [
+    "chart",
+    "bars",
+    "stats",
+    "report",
+    "graph"
+   ],
+   "body": "<path d=\"M3 20.5h18\"/><rect x=\"5\" y=\"15\" width=\"3.5\" height=\"5.5\" rx=\"1\"/><rect x=\"10.25\" y=\"10\" width=\"3.5\" height=\"10.5\" rx=\"1\"/><rect x=\"15.5\" y=\"4\" width=\"3.5\" height=\"16.5\" rx=\"1\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M3 20.5h18"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "5",
+      "y": "15",
+      "width": "3.5",
+      "height": "5.5",
+      "rx": "1"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "10.25",
+      "y": "10",
+      "width": "3.5",
+      "height": "10.5",
+      "rx": "1"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "15.5",
+      "y": "4",
+      "width": "3.5",
+      "height": "16.5",
+      "rx": "1"
+     }
+    }
+   ]
+  },
+  {
+   "name": "wallet",
+   "component": "Wallet",
+   "category": "Account",
+   "tags": [
+    "money",
+    "payment",
+    "finance",
+    "billing"
+   ],
+   "body": "<rect x=\"3\" y=\"6.5\" width=\"18\" height=\"13.5\" rx=\"2.5\"/><path d=\"m6 6.5 9-2.7a1.3 1.3 0 0 1 1.6.9l.4 1.8\"/><path d=\"M21 11h-3.2a2.25 2.25 0 0 0 0 4.5H21\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "3",
+      "y": "6.5",
+      "width": "18",
+      "height": "13.5",
+      "rx": "2.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m6 6.5 9-2.7a1.3 1.3 0 0 1 1.6.9l.4 1.8"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M21 11h-3.2a2.25 2.25 0 0 0 0 4.5H21"
+     }
+    }
+   ]
+  },
+  {
+   "name": "image",
+   "component": "Image",
+   "category": "Media",
+   "tags": [
+    "photo",
+    "picture",
+    "gallery",
+    "landscape"
+   ],
+   "body": "<rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2.5\"/><circle cx=\"15.5\" cy=\"9.5\" r=\"1.6\"/><path d=\"m3.5 17 5-5 4 4 2.5-2.5 5.5 5.5\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "3",
+      "y": "4",
+      "width": "18",
+      "height": "16",
+      "rx": "2.5"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "15.5",
+      "cy": "9.5",
+      "r": "1.6"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m3.5 17 5-5 4 4 2.5-2.5 5.5 5.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "video",
+   "component": "Video",
+   "category": "Media",
+   "tags": [
+    "play",
+    "movie",
+    "film",
+    "youtube",
+    "player"
+   ],
+   "body": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"4\"/><path d=\"M10.5 9.5v5l4-2.5z\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "3",
+      "y": "5",
+      "width": "18",
+      "height": "14",
+      "rx": "4"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M10.5 9.5v5l4-2.5z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "zap",
+   "component": "Zap",
+   "category": "Developer",
+   "tags": [
+    "bolt",
+    "lightning",
+    "power",
+    "fast",
+    "energy"
+   ],
+   "body": "<path d=\"M13 2.5 5 13.5h6l-1 8 8-11h-6z\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M13 2.5 5 13.5h6l-1 8 8-11h-6z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "settings",
+   "component": "Settings",
+   "category": "Account",
+   "tags": [
+    "gear",
+    "cog",
+    "preferences",
+    "options",
+    "config"
+   ],
+   "body": "<path d=\"M9.87 5.02L10.39 2.84L13.61 2.84L14.13 5.02L15.43 5.55L17.33 4.38L19.62 6.67L18.45 8.57L18.98 9.87L21.16 10.39L21.16 13.61L18.98 14.13L18.45 15.43L19.62 17.33L17.33 19.62L15.43 18.45L14.13 18.98L13.61 21.16L10.39 21.16L9.87 18.98L8.57 18.45L6.67 19.62L4.38 17.33L5.55 15.43L5.02 14.13L2.84 13.61L2.84 10.39L5.02 9.87L5.55 8.57L4.38 6.67L6.67 4.38L8.57 5.55z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M9.87 5.02L10.39 2.84L13.61 2.84L14.13 5.02L15.43 5.55L17.33 4.38L19.62 6.67L18.45 8.57L18.98 9.87L21.16 10.39L21.16 13.61L18.98 14.13L18.45 15.43L19.62 17.33L17.33 19.62L15.43 18.45L14.13 18.98L13.61 21.16L10.39 21.16L9.87 18.98L8.57 18.45L6.67 19.62L4.38 17.33L5.55 15.43L5.02 14.13L2.84 13.61L2.84 10.39L5.02 9.87L5.55 8.57L4.38 6.67L6.67 4.38L8.57 5.55z"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "3"
+     }
+    }
+   ]
+  },
+  {
+   "name": "search",
+   "component": "Search",
+   "category": "Interface",
+   "tags": [
+    "find",
+    "magnifier",
+    "lookup",
+    "zoom"
+   ],
+   "body": "<circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"m20 20-4.9-4.9\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "10.5",
+      "cy": "10.5",
+      "r": "6.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m20 20-4.9-4.9"
+     }
+    }
+   ]
+  },
+  {
+   "name": "bell",
+   "component": "Bell",
+   "category": "Communication",
+   "tags": [
+    "notification",
+    "alert",
+    "alarm",
+    "ring"
+   ],
+   "body": "<path d=\"M6 17v-6a6 6 0 0 1 12 0v6l1.5 1.5h-15z\"/><path d=\"M10 21a2 2 0 0 0 4 0\"/><path d=\"m19.2 4.6 1.6-1.1M19.8 7.5h2\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M6 17v-6a6 6 0 0 1 12 0v6l1.5 1.5h-15z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M10 21a2 2 0 0 0 4 0"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m19.2 4.6 1.6-1.1M19.8 7.5h2"
+     }
+    }
+   ]
+  },
+  {
+   "name": "calendar",
+   "component": "Calendar",
+   "category": "Interface",
+   "tags": [
+    "date",
+    "schedule",
+    "event",
+    "planner"
+   ],
+   "body": "<rect x=\"3.5\" y=\"5\" width=\"17\" height=\"15.5\" rx=\"2.5\"/><path d=\"M8 3v4M16 3v4M3.5 10h17\"/><circle cx=\"8\" cy=\"14\" r=\"0.9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"12\" cy=\"14\" r=\"0.9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16\" cy=\"14\" r=\"0.9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"8\" cy=\"17.4\" r=\"0.9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"12\" cy=\"17.4\" r=\"0.9\" fill=\"currentColor\" stroke=\"none\"/><circle cx=\"16\" cy=\"17.4\" r=\"0.9\" fill=\"currentColor\" stroke=\"none\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "3.5",
+      "y": "5",
+      "width": "17",
+      "height": "15.5",
+      "rx": "2.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M8 3v4M16 3v4M3.5 10h17"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "8",
+      "cy": "14",
+      "r": "0.9",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "14",
+      "r": "0.9",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "16",
+      "cy": "14",
+      "r": "0.9",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "8",
+      "cy": "17.4",
+      "r": "0.9",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "17.4",
+      "r": "0.9",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "16",
+      "cy": "17.4",
+      "r": "0.9",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    }
+   ]
+  },
+  {
+   "name": "mail",
+   "component": "Mail",
+   "category": "Communication",
+   "tags": [
+    "email",
+    "envelope",
+    "inbox",
+    "message"
+   ],
+   "body": "<rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2.5\"/><path d=\"m3.5 7 8.5 6.5L20.5 7\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "3",
+      "y": "5",
+      "width": "18",
+      "height": "14",
+      "rx": "2.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m3.5 7 8.5 6.5L20.5 7"
+     }
+    }
+   ]
+  },
+  {
+   "name": "folder",
+   "component": "Folder",
+   "category": "Files",
+   "tags": [
+    "directory",
+    "files",
+    "storage"
+   ],
+   "body": "<path d=\"M3 7.5a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M3 7.5a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "file-text",
+   "component": "FileText",
+   "category": "Files",
+   "tags": [
+    "document",
+    "page",
+    "doc",
+    "text",
+    "paper"
+   ],
+   "body": "<path d=\"M14 3H7.5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7.5z\"/><path d=\"M14 3v3.5a1 1 0 0 0 1 1h3.5\"/><path d=\"M9 12.5h6M9 16h6\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M14 3H7.5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V7.5z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M14 3v3.5a1 1 0 0 0 1 1h3.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M9 12.5h6M9 16h6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cloud-upload",
+   "component": "CloudUpload",
+   "category": "Files",
+   "tags": [
+    "upload",
+    "sync",
+    "backup",
+    "storage"
+   ],
+   "body": "<path d=\"M7.5 18.5a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.6-1.1A4.5 4.5 0 0 1 17 18.5z\"/><path d=\"M12 16v-5.5m0 0-2.2 2.2M12 10.5l2.2 2.2\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M7.5 18.5a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.6-1.1A4.5 4.5 0 0 1 17 18.5z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 16v-5.5m0 0-2.2 2.2M12 10.5l2.2 2.2"
+     }
+    }
+   ]
+  },
+  {
+   "name": "cloud-download",
+   "component": "CloudDownload",
+   "category": "Files",
+   "tags": [
+    "download",
+    "sync",
+    "save",
+    "storage"
+   ],
+   "body": "<path d=\"M7.5 18.5a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.6-1.1A4.5 4.5 0 0 1 17 18.5z\"/><path d=\"M12 10.5V16m0 0-2.2-2.2M12 16l2.2-2.2\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M7.5 18.5a4 4 0 0 1-.5-7.97 5.5 5.5 0 0 1 10.6-1.1A4.5 4.5 0 0 1 17 18.5z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 10.5V16m0 0-2.2-2.2M12 16l2.2-2.2"
+     }
+    }
+   ]
+  },
+  {
+   "name": "link",
+   "component": "Link",
+   "category": "Communication",
+   "tags": [
+    "chain",
+    "url",
+    "connect",
+    "attach"
+   ],
+   "body": "<path d=\"M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1\"/><path d=\"M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"
+     }
+    }
+   ]
+  },
+  {
+   "name": "user",
+   "component": "User",
+   "category": "Account",
+   "tags": [
+    "person",
+    "profile",
+    "avatar",
+    "account"
+   ],
+   "body": "<circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4.5 20.5c0-4 3.4-6.5 7.5-6.5s7.5 2.5 7.5 6.5z\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "8",
+      "r": "4"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4.5 20.5c0-4 3.4-6.5 7.5-6.5s7.5 2.5 7.5 6.5z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "users",
+   "component": "Users",
+   "category": "Account",
+   "tags": [
+    "people",
+    "team",
+    "group",
+    "community"
+   ],
+   "body": "<circle cx=\"8.5\" cy=\"8\" r=\"3\"/><path d=\"M2.5 19.5c0-3.3 2.6-5.5 6-5.5s6 2.2 6 5.5z\"/><circle cx=\"16.5\" cy=\"8\" r=\"3\"/><path d=\"M15.8 14.2c3 .2 5.7 2 5.7 5.3\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "8.5",
+      "cy": "8",
+      "r": "3"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M2.5 19.5c0-3.3 2.6-5.5 6-5.5s6 2.2 6 5.5z"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "16.5",
+      "cy": "8",
+      "r": "3"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M15.8 14.2c3 .2 5.7 2 5.7 5.3"
+     }
+    }
+   ]
+  },
+  {
+   "name": "lock",
+   "component": "Lock",
+   "category": "Account",
+   "tags": [
+    "secure",
+    "password",
+    "private",
+    "padlock"
+   ],
+   "body": "<rect x=\"5\" y=\"10.5\" width=\"14\" height=\"10\" rx=\"2.5\"/><path d=\"M8 10.5V8a4 4 0 0 1 8 0v2.5\"/><circle cx=\"12\" cy=\"14.8\" r=\"1.2\" fill=\"currentColor\" stroke=\"none\"/><path d=\"M12 15.5v2\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "5",
+      "y": "10.5",
+      "width": "14",
+      "height": "10",
+      "rx": "2.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M8 10.5V8a4 4 0 0 1 8 0v2.5"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "14.8",
+      "r": "1.2",
+      "fill": "currentColor",
+      "stroke": "none"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 15.5v2"
+     }
+    }
+   ]
+  },
+  {
+   "name": "shield-check",
+   "component": "ShieldCheck",
+   "category": "Account",
+   "tags": [
+    "security",
+    "protect",
+    "verified",
+    "safe"
+   ],
+   "body": "<path d=\"M12 3 4.5 5.8v5.7c0 4.6 3.1 8 7.5 9.5 4.4-1.5 7.5-4.9 7.5-9.5V5.8z\"/><path d=\"m8.8 12 2.2 2.2 4.2-4.4\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 3 4.5 5.8v5.7c0 4.6 3.1 8 7.5 9.5 4.4-1.5 7.5-4.9 7.5-9.5V5.8z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m8.8 12 2.2 2.2 4.2-4.4"
+     }
+    }
+   ]
+  },
+  {
+   "name": "trash",
+   "component": "Trash",
+   "category": "Actions",
+   "tags": [
+    "delete",
+    "remove",
+    "bin",
+    "garbage"
+   ],
+   "body": "<path d=\"M4 6.5h16\"/><path d=\"M9.5 6.5v-2a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2\"/><path d=\"m6 6.5 1 12.5a2 2 0 0 0 2 1.8h6a2 2 0 0 0 2-1.8l1-12.5\"/><path d=\"M10 10.5v6M14 10.5v6\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4 6.5h16"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M9.5 6.5v-2a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v2"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m6 6.5 1 12.5a2 2 0 0 0 2 1.8h6a2 2 0 0 0 2-1.8l1-12.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M10 10.5v6M14 10.5v6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "star",
+   "component": "Star",
+   "category": "Interface",
+   "tags": [
+    "favorite",
+    "rating",
+    "bookmark",
+    "review"
+   ],
+   "body": "<path d=\"M12 3.7L14.47 9.5L20.75 10.06L15.99 14.2L17.41 20.34L12 17.1L6.59 20.34L8.01 14.2L3.25 10.06L9.53 9.5z\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 3.7L14.47 9.5L20.75 10.06L15.99 14.2L17.41 20.34L12 17.1L6.59 20.34L8.01 14.2L3.25 10.06L9.53 9.5z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "heart",
+   "component": "Heart",
+   "category": "Interface",
+   "tags": [
+    "like",
+    "love",
+    "favorite",
+    "health"
+   ],
+   "body": "<path d=\"M12 20.5C7 17 3.5 13.8 3.5 9.8A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 8.5 1.8c0 4-3.5 7.2-8.5 10.7z\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 20.5C7 17 3.5 13.8 3.5 9.8A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 8.5 1.8c0 4-3.5 7.2-8.5 10.7z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "map-pin",
+   "component": "MapPin",
+   "category": "Interface",
+   "tags": [
+    "location",
+    "place",
+    "marker",
+    "gps"
+   ],
+   "body": "<path d=\"M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.5\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "10",
+      "r": "2.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "home",
+   "component": "Home",
+   "category": "Interface",
+   "tags": [
+    "house",
+    "main",
+    "start",
+    "building"
+   ],
+   "body": "<path d=\"m3.5 11 8.5-7.5 8.5 7.5\"/><path d=\"M5.5 9.5V20h13V9.5\"/><path d=\"M10 20v-5h4v5\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m3.5 11 8.5-7.5 8.5 7.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M5.5 9.5V20h13V9.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M10 20v-5h4v5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "grid",
+   "component": "Grid",
+   "category": "Interface",
+   "tags": [
+    "layout",
+    "dashboard",
+    "tiles",
+    "squares"
+   ],
+   "body": "<rect x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/><rect x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1.5\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "4",
+      "y": "4",
+      "width": "7",
+      "height": "7",
+      "rx": "1.5"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "13",
+      "y": "4",
+      "width": "7",
+      "height": "7",
+      "rx": "1.5"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "4",
+      "y": "13",
+      "width": "7",
+      "height": "7",
+      "rx": "1.5"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "13",
+      "y": "13",
+      "width": "7",
+      "height": "7",
+      "rx": "1.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "toggle-on",
+   "component": "ToggleOn",
+   "category": "Interface",
+   "tags": [
+    "switch",
+    "on",
+    "enabled",
+    "control"
+   ],
+   "body": "<rect x=\"2\" y=\"7\" width=\"20\" height=\"10\" rx=\"5\"/><circle cx=\"16.5\" cy=\"12\" r=\"2.6\" fill=\"currentColor\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "2",
+      "y": "7",
+      "width": "20",
+      "height": "10",
+      "rx": "5"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "16.5",
+      "cy": "12",
+      "r": "2.6",
+      "fill": "currentColor"
+     }
+    }
+   ]
+  },
+  {
+   "name": "toggle-off",
+   "component": "ToggleOff",
+   "category": "Interface",
+   "tags": [
+    "switch",
+    "off",
+    "disabled",
+    "control"
+   ],
+   "body": "<rect x=\"2\" y=\"7\" width=\"20\" height=\"10\" rx=\"5\"/><path d=\"m7.5 10 4 4m0-4-4 4\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "2",
+      "y": "7",
+      "width": "20",
+      "height": "10",
+      "rx": "5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m7.5 10 4 4m0-4-4 4"
+     }
+    }
+   ]
+  },
+  {
+   "name": "refresh",
+   "component": "Refresh",
+   "category": "Actions",
+   "tags": [
+    "reload",
+    "sync",
+    "update",
+    "repeat"
+   ],
+   "body": "<path d=\"M20 11a8 8 0 0 0-14.4-4.3L4 8.5\"/><path d=\"M4 4v4.5h4.5\"/><path d=\"M4 13a8 8 0 0 0 14.4 4.3l1.6-1.8\"/><path d=\"M20 20v-4.5h-4.5\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M20 11a8 8 0 0 0-14.4-4.3L4 8.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4 4v4.5h4.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4 13a8 8 0 0 0 14.4 4.3l1.6-1.8"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M20 20v-4.5h-4.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "share",
+   "component": "Share",
+   "category": "Communication",
+   "tags": [
+    "network",
+    "social",
+    "connect",
+    "send"
+   ],
+   "body": "<circle cx=\"6\" cy=\"12\" r=\"2.5\"/><circle cx=\"17.5\" cy=\"6\" r=\"2.5\"/><circle cx=\"17.5\" cy=\"18\" r=\"2.5\"/><path d=\"m8.2 10.8 7.1-3.6M8.2 13.2l7.1 3.6\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "6",
+      "cy": "12",
+      "r": "2.5"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "17.5",
+      "cy": "6",
+      "r": "2.5"
+     }
+    },
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "17.5",
+      "cy": "18",
+      "r": "2.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m8.2 10.8 7.1-3.6M8.2 13.2l7.1 3.6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "download",
+   "component": "Download",
+   "category": "Files",
+   "tags": [
+    "save",
+    "get",
+    "import",
+    "tray"
+   ],
+   "body": "<path d=\"M12 4v11m0 0-4-4m4 4 4-4\"/><path d=\"M4.5 16v3.5h15V16\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 4v11m0 0-4-4m4 4 4-4"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4.5 16v3.5h15V16"
+     }
+    }
+   ]
+  },
+  {
+   "name": "plus-circle",
+   "component": "PlusCircle",
+   "category": "Actions",
+   "tags": [
+    "add",
+    "new",
+    "create"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 8v8M8 12h8\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 8v8M8 12h8"
+     }
+    }
+   ]
+  },
+  {
+   "name": "minus-circle",
+   "component": "MinusCircle",
+   "category": "Actions",
+   "tags": [
+    "remove",
+    "subtract",
+    "less"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8 12h8\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M8 12h8"
+     }
+    }
+   ]
+  },
+  {
+   "name": "check-circle",
+   "component": "CheckCircle",
+   "category": "Actions",
+   "tags": [
+    "done",
+    "success",
+    "complete",
+    "ok"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m8.2 12.3 2.6 2.6 5-5.3\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m8.2 12.3 2.6 2.6 5-5.3"
+     }
+    }
+   ]
+  },
+  {
+   "name": "x-circle",
+   "component": "XCircle",
+   "category": "Actions",
+   "tags": [
+    "close",
+    "cancel",
+    "error",
+    "clear"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"m9 9 6 6m0-6-6 6\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m9 9 6 6m0-6-6 6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "arrow-left-circle",
+   "component": "ArrowLeftCircle",
+   "category": "Arrows",
+   "tags": [
+    "back",
+    "previous",
+    "left"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M16 12H8m0 0 3.5-3.5M8 12l3.5 3.5\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M16 12H8m0 0 3.5-3.5M8 12l3.5 3.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "arrow-right-circle",
+   "component": "ArrowRightCircle",
+   "category": "Arrows",
+   "tags": [
+    "next",
+    "forward",
+    "right"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M8 12h8m0 0-3.5-3.5M16 12l-3.5 3.5\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M8 12h8m0 0-3.5-3.5M16 12l-3.5 3.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "arrow-up-circle",
+   "component": "ArrowUpCircle",
+   "category": "Arrows",
+   "tags": [
+    "top",
+    "up",
+    "upload"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 16V8m0 0-3.5 3.5M12 8l3.5 3.5\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 16V8m0 0-3.5 3.5M12 8l3.5 3.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "arrow-down-circle",
+   "component": "ArrowDownCircle",
+   "category": "Arrows",
+   "tags": [
+    "bottom",
+    "down",
+    "download"
+   ],
+   "body": "<circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 8v8m0 0-3.5-3.5M12 16l3.5-3.5\"/>",
+   "nodes": [
+    {
+     "tag": "circle",
+     "props": {
+      "cx": "12",
+      "cy": "12",
+      "r": "9"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 8v8m0 0-3.5-3.5M12 16l3.5-3.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "crop",
+   "component": "Crop",
+   "category": "Design",
+   "tags": [
+    "trim",
+    "resize",
+    "frame",
+    "cut"
+   ],
+   "body": "<path d=\"M6.5 3v14.5H21\"/><path d=\"M3 6.5h14.5V21\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M6.5 3v14.5H21"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M3 6.5h14.5V21"
+     }
+    }
+   ]
+  },
+  {
+   "name": "scan",
+   "component": "Scan",
+   "category": "Design",
+   "tags": [
+    "fullscreen",
+    "expand",
+    "focus",
+    "frame"
+   ],
+   "body": "<path d=\"M4 9V6a2 2 0 0 1 2-2h3M15 4h3a2 2 0 0 1 2 2v3M20 15v3a2 2 0 0 1-2 2h-3M9 20H6a2 2 0 0 1-2-2v-3\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4 9V6a2 2 0 0 1 2-2h3M15 4h3a2 2 0 0 1 2 2v3M20 15v3a2 2 0 0 1-2 2h-3M9 20H6a2 2 0 0 1-2-2v-3"
+     }
+    }
+   ]
+  },
+  {
+   "name": "chevron-down",
+   "component": "ChevronDown",
+   "category": "Arrows",
+   "tags": [
+    "caret",
+    "expand",
+    "dropdown",
+    "more"
+   ],
+   "body": "<path d=\"m6 9.5 6 6 6-6\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m6 9.5 6 6 6-6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "chevron-up",
+   "component": "ChevronUp",
+   "category": "Arrows",
+   "tags": [
+    "caret",
+    "collapse",
+    "less"
+   ],
+   "body": "<path d=\"m6 14.5 6-6 6 6\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m6 14.5 6-6 6 6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "chevron-left",
+   "component": "ChevronLeft",
+   "category": "Arrows",
+   "tags": [
+    "caret",
+    "back",
+    "previous"
+   ],
+   "body": "<path d=\"m14.5 6-6 6 6 6\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m14.5 6-6 6 6 6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "chevron-right",
+   "component": "ChevronRight",
+   "category": "Arrows",
+   "tags": [
+    "caret",
+    "next",
+    "forward"
+   ],
+   "body": "<path d=\"m9.5 6 6 6-6 6\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m9.5 6 6 6-6 6"
+     }
+    }
+   ]
+  },
+  {
+   "name": "menu",
+   "component": "Menu",
+   "category": "Interface",
+   "tags": [
+    "hamburger",
+    "list",
+    "navigation",
+    "lines"
+   ],
+   "body": "<path d=\"M4 7h16M4 12h16M4 17h16\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4 7h16M4 12h16M4 17h16"
+     }
+    }
+   ]
+  },
+  {
+   "name": "apps",
+   "component": "Apps",
+   "category": "Interface",
+   "tags": [
+    "launcher",
+    "tiles",
+    "modules",
+    "squares"
+   ],
+   "body": "<rect x=\"5\" y=\"5\" width=\"5.5\" height=\"5.5\" rx=\"1.4\"/><rect x=\"13.5\" y=\"5\" width=\"5.5\" height=\"5.5\" rx=\"1.4\"/><rect x=\"5\" y=\"13.5\" width=\"5.5\" height=\"5.5\" rx=\"1.4\"/><rect x=\"13.5\" y=\"13.5\" width=\"5.5\" height=\"5.5\" rx=\"1.4\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "5",
+      "y": "5",
+      "width": "5.5",
+      "height": "5.5",
+      "rx": "1.4"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "13.5",
+      "y": "5",
+      "width": "5.5",
+      "height": "5.5",
+      "rx": "1.4"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "5",
+      "y": "13.5",
+      "width": "5.5",
+      "height": "5.5",
+      "rx": "1.4"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "13.5",
+      "y": "13.5",
+      "width": "5.5",
+      "height": "5.5",
+      "rx": "1.4"
+     }
+    }
+   ]
+  },
+  {
+   "name": "brush",
+   "component": "Brush",
+   "category": "Design",
+   "tags": [
+    "paint",
+    "art",
+    "draw",
+    "style"
+   ],
+   "body": "<path d=\"M20.5 3.5 12 12\"/><path d=\"m9 11.5 3.5 3.5c0 3-2 5.5-6 5.5-2 0-3-.5-3.5-.5 1.5-1 2-2.5 2-4 0-2.3 1.7-4.5 4-4.5z\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M20.5 3.5 12 12"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m9 11.5 3.5 3.5c0 3-2 5.5-6 5.5-2 0-3-.5-3.5-.5 1.5-1 2-2.5 2-4 0-2.3 1.7-4.5 4-4.5z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "pencil",
+   "component": "Pencil",
+   "category": "Design",
+   "tags": [
+    "edit",
+    "write",
+    "draw",
+    "compose"
+   ],
+   "body": "<path d=\"m4 20 1-4.5L16.5 4a2.1 2.1 0 0 1 3 3L8 18.5z\"/><path d=\"m14.5 6 3 3\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m4 20 1-4.5L16.5 4a2.1 2.1 0 0 1 3 3L8 18.5z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m14.5 6 3 3"
+     }
+    }
+   ]
+  },
+  {
+   "name": "wand",
+   "component": "Wand",
+   "category": "Design",
+   "tags": [
+    "magic",
+    "ai",
+    "sparkle",
+    "auto"
+   ],
+   "body": "<path d=\"M14 7.5 16.5 10 7 19.5a1.77 1.77 0 0 1-2.5-2.5z\"/><path d=\"M7 3.5v4M5 5.5h4\"/><path d=\"M18 15.5v4M16 17.5h4\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M14 7.5 16.5 10 7 19.5a1.77 1.77 0 0 1-2.5-2.5z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M7 3.5v4M5 5.5h4"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M18 15.5v4M16 17.5h4"
+     }
+    }
+   ]
+  },
+  {
+   "name": "box",
+   "component": "Box",
+   "category": "Developer",
+   "tags": [
+    "package",
+    "cube",
+    "3d",
+    "product"
+   ],
+   "body": "<path d=\"M12 3 4 7.5v9L12 21l8-4.5v-9z\"/><path d=\"M4 7.5 12 12l8-4.5M12 12v9\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 3 4 7.5v9L12 21l8-4.5v-9z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M4 7.5 12 12l8-4.5M12 12v9"
+     }
+    }
+   ]
+  },
+  {
+   "name": "layers",
+   "component": "Layers",
+   "category": "Design",
+   "tags": [
+    "stack",
+    "levels",
+    "copy",
+    "arrange"
+   ],
+   "body": "<path d=\"m12 3.5 8.5 4.5-8.5 4.5L3.5 8z\"/><path d=\"m3.5 12 8.5 4.5 8.5-4.5\"/><path d=\"m3.5 16 8.5 4.5 8.5-4.5\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m12 3.5 8.5 4.5-8.5 4.5L3.5 8z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m3.5 12 8.5 4.5 8.5-4.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "m3.5 16 8.5 4.5 8.5-4.5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "pie-chart",
+   "component": "PieChart",
+   "category": "Data",
+   "tags": [
+    "chart",
+    "stats",
+    "analytics",
+    "share"
+   ],
+   "body": "<path d=\"M12 12.75v-7.5a7.5 7.5 0 1 0 7.5 7.5z\"/><path d=\"M14.5 3.75a6.5 6.5 0 0 1 6.5 6.5h-6.5z\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "M12 12.75v-7.5a7.5 7.5 0 1 0 7.5 7.5z"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M14.5 3.75a6.5 6.5 0 0 1 6.5 6.5h-6.5z"
+     }
+    }
+   ]
+  },
+  {
+   "name": "trending-up",
+   "component": "TrendingUp",
+   "category": "Data",
+   "tags": [
+    "growth",
+    "increase",
+    "stats",
+    "arrow"
+   ],
+   "body": "<path d=\"m3.5 17 6-6 4 4 7-7.5\"/><path d=\"M15.5 7.5h5v5\"/>",
+   "nodes": [
+    {
+     "tag": "path",
+     "props": {
+      "d": "m3.5 17 6-6 4 4 7-7.5"
+     }
+    },
+    {
+     "tag": "path",
+     "props": {
+      "d": "M15.5 7.5h5v5"
+     }
+    }
+   ]
+  },
+  {
+   "name": "bar-chart",
+   "component": "BarChart",
+   "category": "Data",
+   "tags": [
+    "chart",
+    "stats",
+    "levels",
+    "signal"
+   ],
+   "body": "<rect x=\"4\" y=\"13\" width=\"4\" height=\"7\" rx=\"1\"/><rect x=\"10\" y=\"8.5\" width=\"4\" height=\"11.5\" rx=\"1\"/><rect x=\"16\" y=\"4\" width=\"4\" height=\"16\" rx=\"1\"/>",
+   "nodes": [
+    {
+     "tag": "rect",
+     "props": {
+      "x": "4",
+      "y": "13",
+      "width": "4",
+      "height": "7",
+      "rx": "1"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "10",
+      "y": "8.5",
+      "width": "4",
+      "height": "11.5",
+      "rx": "1"
+     }
+    },
+    {
+     "tag": "rect",
+     "props": {
+      "x": "16",
+      "y": "4",
+      "width": "4",
+      "height": "16",
+      "rx": "1"
+     }
+    }
+   ]
+  }
+ ]
+}
