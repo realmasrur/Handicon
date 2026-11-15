@@ -1,18 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { DEFAULT_STROKE, categories, icons, type IconData } from "@/lib/icons";
+import { categories, icons, type IconData } from "@/lib/icons";
 import { IconDetail } from "./IconDetail";
 import { SvgIcon } from "./SvgIcon";
-
-const DEFAULT_SIZE_CONTROL = 28;
-const SWATCHES = [
-  { label: "Current text color", value: "" },
-  { label: "Blue", value: "#2b45f5" },
-  { label: "Red", value: "#e5484d" },
-  { label: "Green", value: "#12a150" },
-  { label: "Amber", value: "#f5a524" },
-];
 
 function haystack(icon: IconData) {
   return `${icon.name.replace(/-/g, " ")} ${icon.category} ${icon.tags.join(" ")}`.toLowerCase();
@@ -21,9 +12,6 @@ function haystack(icon: IconData) {
 export function Explorer() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
-  const [size, setSize] = useState(DEFAULT_SIZE_CONTROL);
-  const [strokeWidth, setStrokeWidth] = useState(DEFAULT_STROKE);
-  const [color, setColor] = useState("");
   const [selected, setSelected] = useState<IconData | null>(null);
 
   const searchRef = useRef<HTMLInputElement>(null);
@@ -56,9 +44,6 @@ export function Explorer() {
     setSelected(null);
     trigger.current?.focus();
   }, []);
-
-  const changed = size !== DEFAULT_SIZE_CONTROL || strokeWidth !== DEFAULT_STROKE || color !== "";
-  const options = { size, strokeWidth, color };
 
   return (
     <section className="explorer" id="icons" aria-labelledby="icons-title">
@@ -96,55 +81,6 @@ export function Explorer() {
               </button>
             ))}
           </div>
-
-          <div className="controls">
-            <label className="control">
-              <span>Size</span>
-              <input type="range" min={16} max={48} step={2} value={size} onChange={(e) => setSize(Number(e.target.value))} />
-              <output>{size}px</output>
-            </label>
-            <label className="control">
-              <span>Stroke</span>
-              <input type="range" min={1} max={3} step={0.25} value={strokeWidth} onChange={(e) => setStrokeWidth(Number(e.target.value))} />
-              <output>{strokeWidth}</output>
-            </label>
-            <div className="control" role="group" aria-label="Color">
-              <span>Color</span>
-              <div className="swatches">
-                {SWATCHES.map((s) => (
-                  <button
-                    key={s.label}
-                    type="button"
-                    className={`swatch${s.value === "" ? " swatch--default" : ""}`}
-                    style={s.value ? { background: s.value } : undefined}
-                    aria-label={s.label}
-                    aria-pressed={color === s.value}
-                    onClick={() => setColor(s.value)}
-                  />
-                ))}
-                <input
-                  type="color"
-                  className="swatch-input"
-                  aria-label="Pick a custom color"
-                  value={color || "#161821"}
-                  onChange={(e) => setColor(e.target.value)}
-                />
-              </div>
-            </div>
-            {changed && (
-              <button
-                type="button"
-                className="button button--small"
-                onClick={() => {
-                  setSize(DEFAULT_SIZE_CONTROL);
-                  setStrokeWidth(DEFAULT_STROKE);
-                  setColor("");
-                }}
-              >
-                Reset
-              </button>
-            )}
-          </div>
         </div>
 
         {filtered.length > 0 ? (
@@ -161,7 +97,7 @@ export function Explorer() {
                   }}
                 >
                   <span className="cell__icon">
-                    <SvgIcon icon={icon} size={size} strokeWidth={strokeWidth} color={color || "currentColor"} />
+                    <SvgIcon icon={icon} size={28} />
                   </span>
                   <span className="cell__name">{icon.name}</span>
                 </button>
@@ -188,7 +124,7 @@ export function Explorer() {
         )}
       </div>
 
-      {selected && <IconDetail key={selected.name} icon={selected} options={options} onClose={close} />}
+      {selected && <IconDetail key={selected.name} icon={selected} onClose={close} />}
     </section>
   );
 }

@@ -1,9 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { toJsx, toSvg, type IconData, type IconOptions } from "@/lib/icons";
+import { useEffect, useRef, useState } from "react";
+import { DEFAULT_STROKE, toJsx, toSvg, type IconData } from "@/lib/icons";
 import { SvgIcon } from "./SvgIcon";
 import { useCopy } from "./useCopy";
+
+const START_SIZE = 48;
+const SWATCHES = [
+  { label: "Current text color", value: "" },
+  { label: "Blue", value: "#2b45f5" },
+  { label: "Red", value: "#e5484d" },
+  { label: "Green", value: "#12a150" },
+  { label: "Amber", value: "#f5a524" },
+];
 
 function download(name: string, svg: string) {
   const url = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
@@ -14,17 +23,14 @@ function download(name: string, svg: string) {
   URL.revokeObjectURL(url);
 }
 
-export function IconDetail({
-  icon,
-  options,
-  onClose,
-}: {
-  icon: IconData;
-  options: IconOptions;
-  onClose: () => void;
-}) {
+/** Opens for one icon. Size, stroke and color belong to this icon only and reset when another is opened. */
+export function IconDetail({ icon, onClose }: { icon: IconData; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const { copied, copy } = useCopy();
+
+  const [size, setSize] = useState(START_SIZE);
+  const [strokeWidth, setStrokeWidth] = useState(DEFAULT_STROKE);
+  const [color, setColor] = useState("");
 
   useEffect(() => {
     closeRef.current?.focus();
@@ -35,6 +41,8 @@ export function IconDetail({
     return () => window.removeEventListener("keydown", onKey);
   }, [onClose]);
 
+  const options = { size, strokeWidth, color };
+  const changed = size !== START_SIZE || strokeWidth !== DEFAULT_STROKE || color !== "";
   const svg = toSvg(icon, options);
   const jsx = toJsx(icon, options);
   const importLine = `import { ${icon.component} } from "handicon";`;
@@ -57,7 +65,56 @@ export function IconDetail({
         </header>
 
         <div className="drawer__preview">
-          <SvgIcon icon={icon} size={96} strokeWidth={options.strokeWidth} color={options.color || "currentColor"} />
+          <SvgIcon icon={icon} size={size} strokeWidth={strokeWidth} color={color || "currentColor"} />
+        </div>
+
+        <div className="tune">
+          <label className="tune__row">
+            <span className="tune__label">Size</span>
+            <input type="range" min={16} max={112} step={4} value={size} onChange={(e) => setSize(Number(e.target.value))} />
+            <output className="tune__value">{size}px</output>
+          </label>
+          <label className="tune__row">
+            <span className="tune__label">Stroke</span>
+            <input type="range" min={1} max={3} step={0.25} value={strokeWidth} onChange={(e) => setStrokeWidth(Number(e.target.value))} />
+            <output className="tune__value">{strokeWidth}</output>
+          </label>
+          <div className="tune__row" role="group" aria-label="Color">
+            <span className="tune__label">Color</span>
+            <div className="swatches">
+              {SWATCHES.map((s) => (
+                <button
+                  key={s.label}
+                  type="button"
+                  className={`swatch${s.value === "" ? " swatch--default" : ""}`}
+                  style={s.value ? { background: s.value } : undefined}
+                  aria-label={s.label}
+                  aria-pressed={color === s.value}
+                  onClick={() => setColor(s.value)}
+                />
+              ))}
+              <input
+                type="color"
+                className="swatch-input"
+                aria-label="Pick a custom color"
+                value={color || "#161821"}
+                onChange={(e) => setColor(e.target.value)}
+              />
+            </div>
+            {changed && (
+              <button
+                type="button"
+                className="button button--small tune__reset"
+                onClick={() => {
+                  setSize(START_SIZE);
+                  setStrokeWidth(DEFAULT_STROKE);
+                  setColor("");
+                }}
+              >
+                Reset
+              </button>
+            )}
+          </div>
         </div>
 
         <div className="drawer__actions">
