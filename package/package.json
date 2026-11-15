@@ -1,7 +1,7 @@
 {
   "name": "handicon",
   "version": "0.1.0",
-  "description": "Soft, rounded icons for React. 56 icons on a 24px grid, with size, stroke and color as props.",
+  "description": "Soft, rounded icons for React. 59 icons on a 24px grid, with size, stroke and color as props.",
   "keywords": ["icons", "react", "svg", "icon-library", "nextjs", "handicon"],
   "license": "MIT",
   "type": "module",

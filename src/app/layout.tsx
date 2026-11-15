@@ -10,7 +10,7 @@ const hand = Caveat({ subsets: ["latin"], variable: "--font-hand", display: "swa
 export const metadata: Metadata = {
   title: "Handicon: soft, rounded icons for React",
   description:
-    "56 icons on a 24px grid. Install with npm, set size, stroke and color as props, and ship only the icons you use.",
+    "59 icons on a 24px grid. Install with npm, set size, stroke and color as props, and ship only the icons you use.",
 };
 
 // Runs before first paint so the page never flashes the wrong theme.

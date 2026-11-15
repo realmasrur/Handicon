@@ -1,6 +1,6 @@
 # Handicon
 
-Soft, rounded icons for React. 56 icons on a 24px grid. Size, stroke and color are props, and icons you don't import are left out of your bundle.
+Soft, rounded icons for React. 59 icons on a 24px grid. Size, stroke and color are props, and icons you don't import are left out of your bundle.
 
 ```bash
 npm install handicon
@@ -48,7 +48,7 @@ The files use `currentColor`, so set `color` in CSS to recolor them.
 
 ## Icons
 
-message, code, analytics, wallet, image, video, zap, settings, search, bell, calendar, mail, folder, file-text, cloud-upload, cloud-download, link, user, users, lock, shield-check, trash, star, heart, map-pin, home, grid, toggle-on, toggle-off, refresh, share, download, plus-circle, minus-circle, check-circle, x-circle, arrow-left-circle, arrow-right-circle, arrow-up-circle, arrow-down-circle, crop, scan, chevron-down, chevron-up, chevron-left, chevron-right, menu, apps, brush, pencil, wand, box, layers, pie-chart, trending-up, bar-chart.
+message, code, analytics, wallet, image, video, zap, settings, search, bell, calendar, mail, folder, file-text, cloud-upload, cloud-download, link, user, users, lock, shield-check, trash, star, heart, map-pin, home, grid, toggle-on, toggle-off, refresh, share, download, plus-circle, minus-circle, check-circle, x-circle, arrow-left-circle, arrow-right-circle, arrow-up-circle, arrow-down-circle, crop, scan, chevron-down, chevron-up, chevron-left, chevron-right, menu, apps, brush, pencil, wand, box, layers, pie-chart, trending-up, bar-chart, send, bookmark, users-group.
 
 Component names are PascalCase: `file-text` becomes `FileText`.
 

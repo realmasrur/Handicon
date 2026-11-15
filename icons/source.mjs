@@ -159,6 +159,14 @@ const defs = [
     `<path d="m3.5 17 6-6 4 4 7-7.5"/><path d="M15.5 7.5h5v5"/>`],
   ["bar-chart", "Data", ["chart", "stats", "levels", "signal"],
     `<rect x="4" y="13" width="4" height="7" rx="1"/><rect x="10" y="8.5" width="4" height="11.5" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/>`],
+
+  // Added after v0.1
+  ["send", "Communication", ["paper plane", "submit", "message", "share"],
+    `<path d="M20.5 3.5 3.5 10.5l6.5 3 3 6.5z"/><path d="m10 13.5 10.5-10"/>`],
+  ["bookmark", "Interface", ["save", "ribbon", "favorite", "read later"],
+    `<path d="M7 3.5h10a1 1 0 0 1 1 1v16l-6-4.5-6 4.5v-16a1 1 0 0 1 1-1z"/>`],
+  ["users-group", "Account", ["people", "team", "community", "members", "audience"],
+    `<circle cx="12" cy="8" r="3"/><path d="M6.5 20.5c0-3.3 2.4-5.5 5.5-5.5s5.5 2.2 5.5 5.5z"/><circle cx="4.8" cy="9.5" r="2"/><path d="M1.5 18c0-2.2 1.3-3.8 3.3-3.8.5 0 .9.1 1.3.2"/><circle cx="19.2" cy="9.5" r="2"/><path d="M22.5 18c0-2.2-1.3-3.8-3.3-3.8-.5 0-.9.1-1.3.2"/>`],
 ];
 
 export const categories = [

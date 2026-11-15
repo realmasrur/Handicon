@@ -69,7 +69,10 @@ export type IconName =
   | "layers"
   | "pie-chart"
   | "trending-up"
-  | "bar-chart";
+  | "bar-chart"
+  | "send"
+  | "bookmark"
+  | "users-group";
 
 export declare const iconNames: readonly IconName[];
 
@@ -185,3 +188,9 @@ export declare const TrendingUp: HandiconComponent;
 export declare const TrendingUpIcon: HandiconComponent;
 export declare const BarChart: HandiconComponent;
 export declare const BarChartIcon: HandiconComponent;
+export declare const Send: HandiconComponent;
+export declare const SendIcon: HandiconComponent;
+export declare const Bookmark: HandiconComponent;
+export declare const BookmarkIcon: HandiconComponent;
+export declare const UsersGroup: HandiconComponent;
+export declare const UsersGroupIcon: HandiconComponent;

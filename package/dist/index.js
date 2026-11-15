@@ -90,8 +90,11 @@ const Layers = /*#__PURE__*/ createIcon("layers", "Layers", [["path",{"d":"m12 3
 const PieChart = /*#__PURE__*/ createIcon("pie-chart", "PieChart", [["path",{"d":"M12 12.75v-7.5a7.5 7.5 0 1 0 7.5 7.5z"}],["path",{"d":"M14.5 3.75a6.5 6.5 0 0 1 6.5 6.5h-6.5z"}]]);
 const TrendingUp = /*#__PURE__*/ createIcon("trending-up", "TrendingUp", [["path",{"d":"m3.5 17 6-6 4 4 7-7.5"}],["path",{"d":"M15.5 7.5h5v5"}]]);
 const BarChart = /*#__PURE__*/ createIcon("bar-chart", "BarChart", [["rect",{"x":"4","y":"13","width":"4","height":"7","rx":"1"}],["rect",{"x":"10","y":"8.5","width":"4","height":"11.5","rx":"1"}],["rect",{"x":"16","y":"4","width":"4","height":"16","rx":"1"}]]);
+const Send = /*#__PURE__*/ createIcon("send", "Send", [["path",{"d":"M20.5 3.5 3.5 10.5l6.5 3 3 6.5z"}],["path",{"d":"m10 13.5 10.5-10"}]]);
+const Bookmark = /*#__PURE__*/ createIcon("bookmark", "Bookmark", [["path",{"d":"M7 3.5h10a1 1 0 0 1 1 1v16l-6-4.5-6 4.5v-16a1 1 0 0 1 1-1z"}]]);
+const UsersGroup = /*#__PURE__*/ createIcon("users-group", "UsersGroup", [["circle",{"cx":"12","cy":"8","r":"3"}],["path",{"d":"M6.5 20.5c0-3.3 2.4-5.5 5.5-5.5s5.5 2.2 5.5 5.5z"}],["circle",{"cx":"4.8","cy":"9.5","r":"2"}],["path",{"d":"M1.5 18c0-2.2 1.3-3.8 3.3-3.8.5 0 .9.1 1.3.2"}],["circle",{"cx":"19.2","cy":"9.5","r":"2"}],["path",{"d":"M22.5 18c0-2.2-1.3-3.8-3.3-3.8-.5 0-.9.1-1.3.2"}]]);
 
-export const iconNames = ["message","code","analytics","wallet","image","video","zap","settings","search","bell","calendar","mail","folder","file-text","cloud-upload","cloud-download","link","user","users","lock","shield-check","trash","star","heart","map-pin","home","grid","toggle-on","toggle-off","refresh","share","download","plus-circle","minus-circle","check-circle","x-circle","arrow-left-circle","arrow-right-circle","arrow-up-circle","arrow-down-circle","crop","scan","chevron-down","chevron-up","chevron-left","chevron-right","menu","apps","brush","pencil","wand","box","layers","pie-chart","trending-up","bar-chart"];
+export const iconNames = ["message","code","analytics","wallet","image","video","zap","settings","search","bell","calendar","mail","folder","file-text","cloud-upload","cloud-download","link","user","users","lock","shield-check","trash","star","heart","map-pin","home","grid","toggle-on","toggle-off","refresh","share","download","plus-circle","minus-circle","check-circle","x-circle","arrow-left-circle","arrow-right-circle","arrow-up-circle","arrow-down-circle","crop","scan","chevron-down","chevron-up","chevron-left","chevron-right","menu","apps","brush","pencil","wand","box","layers","pie-chart","trending-up","bar-chart","send","bookmark","users-group"];
 
 export {
   Message,
@@ -206,4 +209,10 @@ export {
   TrendingUp as TrendingUpIcon,
   BarChart,
   BarChart as BarChartIcon,
+  Send,
+  Send as SendIcon,
+  Bookmark,
+  Bookmark as BookmarkIcon,
+  UsersGroup,
+  UsersGroup as UsersGroupIcon,
 };
