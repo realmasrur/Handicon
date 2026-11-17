@@ -13,6 +13,31 @@ const dot = (cx, cy, r = 1) =>
 
 const ring = '<circle cx="12" cy="12" r="9"/>';
 
+// Smooth four-point sparkle centred on (cx, cy) with radius r.
+const star = (cx, cy, r) => {
+  const a = r2(r * 0.06), b = r2(r * 0.31);
+  const P = (x, y) => r2(cx + x) + " " + r2(cy + y);
+  return (
+    "M" + P(0, -r) +
+    "C" + P(a, -b) + " " + P(b, -a) + " " + P(r, 0) +
+    "C" + P(b, a) + " " + P(a, b) + " " + P(0, r) +
+    "C" + P(-a, b) + " " + P(-b, a) + " " + P(-r, 0) +
+    "C" + P(-b, -a) + " " + P(-a, -b) + " " + P(0, -r) + "z"
+  );
+};
+
+// Network node and the line between two nodes, trimmed so it stops at the node edges.
+const NODE_R = 1.9;
+const node = (x, y) => '<circle cx="' + x + '" cy="' + y + '" r="' + NODE_R + '"/>';
+const link = (x1, y1, x2, y2) => {
+  const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
+  const ux = dx / len, uy = dy / len;
+  return (
+    '<path d="M' + r2(x1 + ux * NODE_R) + " " + r2(y1 + uy * NODE_R) +
+    "L" + r2(x2 - ux * NODE_R) + " " + r2(y2 - uy * NODE_R) + '"/>'
+  );
+};
+
 const gearPath = () => {
   const pts = [];
   for (let k = 0; k < 8; k++) {
@@ -167,10 +192,70 @@ const defs = [
     `<path d="M7 3.5h10a1 1 0 0 1 1 1v16l-6-4.5-6 4.5v-16a1 1 0 0 1 1-1z"/>`],
   ["users-group", "Account", ["people", "team", "community", "members", "audience"],
     `<circle cx="12" cy="8" r="3"/><path d="M6.5 20.5c0-3.3 2.4-5.5 5.5-5.5s5.5 2.2 5.5 5.5z"/><circle cx="4.8" cy="9.5" r="2"/><path d="M1.5 18c0-2.2 1.3-3.8 3.3-3.8.5 0 .9.1 1.3.2"/><circle cx="19.2" cy="9.5" r="2"/><path d="M22.5 18c0-2.2-1.3-3.8-3.3-3.8-.5 0-.9.1-1.3.2"/>`],
+
+  // ---- AI ----
+  ["brain", "AI", ["ai", "mind", "intelligence", "think", "memory"],
+    `<path d="M12 5A2.6 2.6 0 0 0 7.5 5.2A2.6 2.6 0 0 0 4.5 8.5A4.5 4.5 0 0 0 4.5 15A3 3 0 0 0 8 19A2.6 2.6 0 0 0 12 19.5V5"/><path d="M12 5A2.6 2.6 0 0 1 16.5 5.2A2.6 2.6 0 0 1 19.5 8.5A4.5 4.5 0 0 1 19.5 15A3 3 0 0 1 16 19A2.6 2.6 0 0 1 12 19.5"/><path d="M8.5 10.5c1.4 0 2.5.9 3.5 2.5M15.5 10.5c-1.4 0-2.5.9-3.5 2.5"/>`],
+  ["bot", "AI", ["ai", "assistant", "chatbot", "agent", "helper"],
+    `<rect x="4" y="8" width="16" height="11.5" rx="4"/><path d="M12 8V5.2"/><circle cx="12" cy="4" r="1.2"/><path d="M2 12.5v3M22 12.5v3M10.2 16.8h3.6"/>${dot(9, 13.2, 1.1)}${dot(15, 13.2, 1.1)}`],
+  ["sparkles", "AI", ["ai", "magic", "new", "generate", "shine", "stars"],
+    `<path d="${star(10, 11, 6.5)}"/><path d="${star(18.5, 5, 2.5)}"/><path d="${star(17.5, 18, 3)}"/>`],
+  ["neural-network", "AI", ["ai", "network", "nodes", "deep learning", "layers", "graph"],
+    `${node(4.5, 7)}${node(4.5, 17)}${node(12, 7)}${node(12, 17)}${node(19.5, 12)}${link(4.5, 7, 12, 7)}${link(4.5, 7, 12, 17)}${link(4.5, 17, 12, 7)}${link(4.5, 17, 12, 17)}${link(12, 7, 19.5, 12)}${link(12, 17, 19.5, 12)}`],
+  ["ai-chip", "AI", ["ai", "processor", "cpu", "gpu", "hardware", "silicon"],
+    `<rect x="6" y="6" width="12" height="12" rx="2.5"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"/><path d="${star(12, 12, 3.4)}"/>`],
+  ["wand-sparkle", "AI", ["ai", "magic", "generate", "enhance", "auto"],
+    `<path d="M4.5 19.5 14.2 9.8"/><path d="${star(17.5, 6.5, 3.6)}"/><path d="M6 3.5v3M4.5 5h3"/><path d="M19.5 15.5v3M18 17h3"/>`],
+  ["robot", "AI", ["ai", "automation", "android", "machine", "bot"],
+    `<rect x="6.5" y="6.5" width="11" height="7" rx="2.5"/><path d="M12 6.5V4.3"/><circle cx="12" cy="3.2" r="1.1"/><rect x="4.5" y="15.5" width="15" height="5.5" rx="2"/><path d="M12 13.5v2M9.5 18.2h5"/>${dot(9.8, 10, 1)}${dot(14.2, 10, 1)}`],
+  ["magic-cursor", "AI", ["ai", "pointer", "click", "smart select", "mouse", "sparkle"],
+    `<path d="M4 4 15.5 8.5l-5.2 1.8L8.5 15.5z"/><path d="${star(18, 17, 3)}"/><path d="M19 2.5v3.5M17.25 4.25h3.5"/>`],
+  ["model", "AI", ["ai", "llm", "weights", "machine learning", "network", "checkpoint"],
+    `<path d="M12 3 4.5 7.5v9L12 21l7.5-4.5v-9z"/><circle cx="12" cy="12" r="2.2"/><path d="M12 9.8V3M10.1 13.1 4.5 16.5M13.9 13.1l5.6 3.4"/>`],
+  ["workflow", "AI", ["ai", "pipeline", "automation", "flow", "steps", "chain"],
+    `<rect x="3" y="3.5" width="6" height="5" rx="1.5"/><rect x="15" y="3.5" width="6" height="5" rx="1.5"/><rect x="9" y="15.5" width="6" height="5" rx="1.5"/><path d="M6 8.5v1.5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8.5M12 12v3.5"/>`],
+
+  // ---- Essential interface ----
+  ["help-circle", "Interface", ["question", "support", "faq", "hint", "help"],
+    `${ring}<path d="M9.3 9.4a2.7 2.7 0 1 1 3.9 2.4c-.7.4-1.2 1-1.2 1.8"/>${dot(12, 16.8, 1)}`],
+  ["info-circle", "Interface", ["information", "details", "about", "note"],
+    `${ring}<path d="M12 11v5.5"/>${dot(12, 7.8, 1)}`],
+  ["alert-triangle", "Interface", ["warning", "caution", "danger", "attention"],
+    `<path d="M12 3.5 2.8 19.5a1 1 0 0 0 .9 1.5h16.6a1 1 0 0 0 .9-1.5z"/><path d="M12 9.5v4.5"/>${dot(12, 17.2, 1)}`],
+  ["warning", "Interface", ["alert", "stop", "error", "problem", "caution"],
+    `<path d="M8.6 3h6.8L21 8.6v6.8L15.4 21H8.6L3 15.4V8.6z"/><path d="M12 8v5"/>${dot(12, 16.3, 1)}`],
+  ["eye", "Interface", ["view", "show", "visible", "preview", "watch"],
+    `<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>`],
+  ["eye-off", "Interface", ["hide", "hidden", "invisible", "private", "password"],
+    `<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/><path d="M4.5 4.5l15 15"/>`],
+  ["copy", "Actions", ["duplicate", "clone", "clipboard", "paste"],
+    `<rect x="9" y="9" width="11.5" height="11.5" rx="2.5"/><path d="M5.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v.5"/>`],
+  ["clipboard", "Actions", ["paste", "copy", "board", "tasks", "list"],
+    `<rect x="5" y="4.5" width="14" height="16.5" rx="2.5"/><rect x="9" y="2.5" width="6" height="4" rx="1.5"/><path d="M9 12h6M9 16h4"/>`],
+  ["undo", "Actions", ["back", "revert", "history", "rewind"],
+    `<path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/>`],
+  ["redo", "Actions", ["forward", "repeat", "history", "again"],
+    `<path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/>`],
+  ["filter", "Interface", ["funnel", "refine", "narrow", "search"],
+    `<path d="M3.5 5h17l-6.5 7.5V19l-4 2v-8.5z"/>`],
+  ["sort", "Interface", ["order", "arrange", "rank", "up down"],
+    `<path d="M8 20V4m0 0L4.5 7.5M8 4l3.5 3.5"/><path d="M16 4v16m0 0 3.5-3.5M16 20l-3.5-3.5"/>`],
+  ["external-link", "Arrows", ["open", "new tab", "launch", "outside", "url"],
+    `<path d="M13 4h7v7"/><path d="M20 4 11 13"/><path d="M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/>`],
+  ["more-horizontal", "Interface", ["menu", "options", "dots", "ellipsis", "overflow"],
+    `${dot(5, 12, 1.4)}${dot(12, 12, 1.4)}${dot(19, 12, 1.4)}`],
+  ["more-vertical", "Interface", ["menu", "options", "dots", "ellipsis", "overflow"],
+    `${dot(12, 5, 1.4)}${dot(12, 12, 1.4)}${dot(12, 19, 1.4)}`],
+  ["command", "Developer", ["cmd", "shortcut", "mac", "key", "hotkey"],
+    `<path d="M9 9h6v6H9z"/><path d="M9 9V6.5A2.5 2.5 0 1 0 6.5 9H9M15 9V6.5A2.5 2.5 0 1 1 17.5 9H15M9 15v2.5A2.5 2.5 0 1 1 6.5 15H9M15 15v2.5A2.5 2.5 0 1 0 17.5 15H15"/>`],
+  ["keyboard", "Developer", ["type", "keys", "input", "shortcut", "typing"],
+    `<rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/>${dot(6.5, 9.5, 0.9)}${dot(10.2, 9.5, 0.9)}${dot(13.8, 9.5, 0.9)}${dot(17.5, 9.5, 0.9)}${dot(6.5, 12.7, 0.9)}${dot(10.2, 12.7, 0.9)}${dot(13.8, 12.7, 0.9)}${dot(17.5, 12.7, 0.9)}<path d="M8 15.8h8"/>`],
+  ["calendar-days", "Interface", ["date", "schedule", "month", "agenda", "planner"],
+    `<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="M7.5 14h2M11 14h2M14.5 14h2M7.5 17.2h2M11 17.2h2"/>`],
 ];
 
 export const categories = [
-  "Communication", "Files", "Data", "Media", "Account",
+  "AI", "Communication", "Files", "Data", "Media", "Account",
   "Developer", "Interface", "Actions", "Arrows", "Design",
 ];
 

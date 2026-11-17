@@ -4,7 +4,7 @@
 //   package/dist/index.d.ts TypeScript types
 //   package/svg/*.svg       raw SVG files
 //   src/data/icons.json     data for the website
-import { mkdirSync, writeFileSync, rmSync } from "node:fs";
+import { mkdirSync, writeFileSync, rmSync, readFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { icons, categories } from "../icons/source.mjs";
@@ -175,5 +175,20 @@ writeFileSync(
     1
   )
 );
+
+// ---------- keep the package README in step with the icon list ----------
+const readmePath = join(pkgDir, "README.md");
+if (existsSync(readmePath)) {
+  const list = categories
+    .map((c) => {
+      const names = icons.filter((i) => i.category === c).map((i) => "`" + i.name + "`");
+      return `- **${c}** (${names.length}): ${names.join(", ")}`;
+    })
+    .join("\n");
+  let readme = readFileSync(readmePath, "utf8");
+  readme = readme.replace(/<!-- icons:start -->[\s\S]*<!-- icons:end -->/, `<!-- icons:start -->\n${list}\n<!-- icons:end -->`);
+  readme = readme.replace(/\d+ icons on a 24px grid/, `${icons.length} icons on a 24px grid`);
+  writeFileSync(readmePath, readme);
+}
 
 console.log(`Built ${icons.length} icons -> package/dist, package/svg, src/data/icons.json`);

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Caveat, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
+import { icons } from "@/lib/icons";
 import "./globals.css";
 
 const sans = Hanken_Grotesk({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -10,7 +11,7 @@ const hand = Caveat({ subsets: ["latin"], variable: "--font-hand", display: "swa
 export const metadata: Metadata = {
   title: "Handicon: soft, rounded icons for React",
   description:
-    "59 icons on a 24px grid. Install with npm, set size, stroke and color as props, and ship only the icons you use.",
+    `${icons.length} icons on a 24px grid. Install with npm, set size, stroke and color as props, and ship only the icons you use.`,
 };
 
 // Runs before first paint so the page never flashes the wrong theme.

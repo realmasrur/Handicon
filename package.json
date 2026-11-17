@@ -8,7 +8,8 @@
     "build": "npm run icons && next build",
     "start": "next start",
     "pack:check": "npm run icons && npm pack ./package --dry-run",
-    "publish:pkg": "npm run icons && npm publish ./package"
+    "publish:pkg": "npm run icons && npm publish ./package",
+    "test": "npm run icons && node scripts/smoke-test.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",

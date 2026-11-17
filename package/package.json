@@ -1,9 +1,28 @@
 {
   "name": "handicon",
-  "version": "0.1.0",
-  "description": "Soft, rounded icons for React. 59 icons on a 24px grid, with size, stroke and color as props.",
-  "keywords": ["icons", "react", "svg", "icon-library", "nextjs", "handicon"],
+  "version": "0.2.0",
+  "description": "Soft, rounded icons for React. Includes AI and essential UI icons, with size, stroke and color as props.",
+  "keywords": [
+    "icons",
+    "react",
+    "svg",
+    "icon-library",
+    "react-icons",
+    "nextjs",
+    "typescript",
+    "ai-icons",
+    "ui-icons",
+    "handicon"
+  ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realmasrur/Handicon.git"
+  },
+  "homepage": "https://github.com/realmasrur/Handicon#readme",
+  "bugs": {
+    "url": "https://github.com/realmasrur/Handicon/issues"
+  },
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
@@ -19,6 +38,9 @@
     "./package.json": "./package.json"
   },
   "files": ["dist", "svg", "README.md", "LICENSE"],
+  "scripts": {
+    "prepublishOnly": "node ../scripts/build-icons.mjs"
+  },
   "peerDependencies": {
     "react": ">=17"
   }

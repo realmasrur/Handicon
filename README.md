@@ -24,14 +24,27 @@ npm run dev
 2. Draw on a 24x24 grid with `<path>`, `<circle>` and `<rect>` only. Stroke, caps and joins are set for you (1.75 wide, round).
 3. Run `npm run icons`. This rewrites `package/dist`, `package/svg` and `src/data/icons.json`.
 
-## Publish to npm
+## Test the package
 
 ```bash
-npm run pack:check     # lists what would be published
-npm run publish:pkg    # runs `npm publish ./package`
+npm test
 ```
 
-Before the first publish, check that the name `handicon` is free on npm (`npm view handicon`). If it is taken, change `name` in `package/package.json` and the install command shown on the website (`src/components/InstallCommand.tsx`, `src/app/page.tsx`, `src/components/IconDetail.tsx`, `src/lib/icons.ts`). A scoped name such as `@yourname/handicon` also works.
+Builds the package and checks every icon in the ESM build, the CommonJS build, the types and the raw SVG files.
+
+## Publish to npm
+
+Step-by-step guide, written for Termux on a phone or any computer: [PUBLISHING.md](./PUBLISHING.md). It covers creating an npm account, checking the name, logging in, publishing, releasing updates and putting the website online.
+
+Short version:
+
+```bash
+npm view handicon      # 404 means the name is free
+npm login
+npm run publish:pkg
+```
+
+Changes between versions are listed in [CHANGELOG.md](./CHANGELOG.md).
 
 ## Design notes
 

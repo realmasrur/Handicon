@@ -72,7 +72,35 @@ export type IconName =
   | "bar-chart"
   | "send"
   | "bookmark"
-  | "users-group";
+  | "users-group"
+  | "brain"
+  | "bot"
+  | "sparkles"
+  | "neural-network"
+  | "ai-chip"
+  | "wand-sparkle"
+  | "robot"
+  | "magic-cursor"
+  | "model"
+  | "workflow"
+  | "help-circle"
+  | "info-circle"
+  | "alert-triangle"
+  | "warning"
+  | "eye"
+  | "eye-off"
+  | "copy"
+  | "clipboard"
+  | "undo"
+  | "redo"
+  | "filter"
+  | "sort"
+  | "external-link"
+  | "more-horizontal"
+  | "more-vertical"
+  | "command"
+  | "keyboard"
+  | "calendar-days";
 
 export declare const iconNames: readonly IconName[];
 
@@ -194,3 +222,59 @@ export declare const Bookmark: HandiconComponent;
 export declare const BookmarkIcon: HandiconComponent;
 export declare const UsersGroup: HandiconComponent;
 export declare const UsersGroupIcon: HandiconComponent;
+export declare const Brain: HandiconComponent;
+export declare const BrainIcon: HandiconComponent;
+export declare const Bot: HandiconComponent;
+export declare const BotIcon: HandiconComponent;
+export declare const Sparkles: HandiconComponent;
+export declare const SparklesIcon: HandiconComponent;
+export declare const NeuralNetwork: HandiconComponent;
+export declare const NeuralNetworkIcon: HandiconComponent;
+export declare const AiChip: HandiconComponent;
+export declare const AiChipIcon: HandiconComponent;
+export declare const WandSparkle: HandiconComponent;
+export declare const WandSparkleIcon: HandiconComponent;
+export declare const Robot: HandiconComponent;
+export declare const RobotIcon: HandiconComponent;
+export declare const MagicCursor: HandiconComponent;
+export declare const MagicCursorIcon: HandiconComponent;
+export declare const Model: HandiconComponent;
+export declare const ModelIcon: HandiconComponent;
+export declare const Workflow: HandiconComponent;
+export declare const WorkflowIcon: HandiconComponent;
+export declare const HelpCircle: HandiconComponent;
+export declare const HelpCircleIcon: HandiconComponent;
+export declare const InfoCircle: HandiconComponent;
+export declare const InfoCircleIcon: HandiconComponent;
+export declare const AlertTriangle: HandiconComponent;
+export declare const AlertTriangleIcon: HandiconComponent;
+export declare const Warning: HandiconComponent;
+export declare const WarningIcon: HandiconComponent;
+export declare const Eye: HandiconComponent;
+export declare const EyeIcon: HandiconComponent;
+export declare const EyeOff: HandiconComponent;
+export declare const EyeOffIcon: HandiconComponent;
+export declare const Copy: HandiconComponent;
+export declare const CopyIcon: HandiconComponent;
+export declare const Clipboard: HandiconComponent;
+export declare const ClipboardIcon: HandiconComponent;
+export declare const Undo: HandiconComponent;
+export declare const UndoIcon: HandiconComponent;
+export declare const Redo: HandiconComponent;
+export declare const RedoIcon: HandiconComponent;
+export declare const Filter: HandiconComponent;
+export declare const FilterIcon: HandiconComponent;
+export declare const Sort: HandiconComponent;
+export declare const SortIcon: HandiconComponent;
+export declare const ExternalLink: HandiconComponent;
+export declare const ExternalLinkIcon: HandiconComponent;
+export declare const MoreHorizontal: HandiconComponent;
+export declare const MoreHorizontalIcon: HandiconComponent;
+export declare const MoreVertical: HandiconComponent;
+export declare const MoreVerticalIcon: HandiconComponent;
+export declare const Command: HandiconComponent;
+export declare const CommandIcon: HandiconComponent;
+export declare const Keyboard: HandiconComponent;
+export declare const KeyboardIcon: HandiconComponent;
+export declare const CalendarDays: HandiconComponent;
+export declare const CalendarDaysIcon: HandiconComponent;

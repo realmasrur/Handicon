@@ -93,8 +93,36 @@ const BarChart = /*#__PURE__*/ createIcon("bar-chart", "BarChart", [["rect",{"x"
 const Send = /*#__PURE__*/ createIcon("send", "Send", [["path",{"d":"M20.5 3.5 3.5 10.5l6.5 3 3 6.5z"}],["path",{"d":"m10 13.5 10.5-10"}]]);
 const Bookmark = /*#__PURE__*/ createIcon("bookmark", "Bookmark", [["path",{"d":"M7 3.5h10a1 1 0 0 1 1 1v16l-6-4.5-6 4.5v-16a1 1 0 0 1 1-1z"}]]);
 const UsersGroup = /*#__PURE__*/ createIcon("users-group", "UsersGroup", [["circle",{"cx":"12","cy":"8","r":"3"}],["path",{"d":"M6.5 20.5c0-3.3 2.4-5.5 5.5-5.5s5.5 2.2 5.5 5.5z"}],["circle",{"cx":"4.8","cy":"9.5","r":"2"}],["path",{"d":"M1.5 18c0-2.2 1.3-3.8 3.3-3.8.5 0 .9.1 1.3.2"}],["circle",{"cx":"19.2","cy":"9.5","r":"2"}],["path",{"d":"M22.5 18c0-2.2-1.3-3.8-3.3-3.8-.5 0-.9.1-1.3.2"}]]);
+const Brain = /*#__PURE__*/ createIcon("brain", "Brain", [["path",{"d":"M12 5A2.6 2.6 0 0 0 7.5 5.2A2.6 2.6 0 0 0 4.5 8.5A4.5 4.5 0 0 0 4.5 15A3 3 0 0 0 8 19A2.6 2.6 0 0 0 12 19.5V5"}],["path",{"d":"M12 5A2.6 2.6 0 0 1 16.5 5.2A2.6 2.6 0 0 1 19.5 8.5A4.5 4.5 0 0 1 19.5 15A3 3 0 0 1 16 19A2.6 2.6 0 0 1 12 19.5"}],["path",{"d":"M8.5 10.5c1.4 0 2.5.9 3.5 2.5M15.5 10.5c-1.4 0-2.5.9-3.5 2.5"}]]);
+const Bot = /*#__PURE__*/ createIcon("bot", "Bot", [["rect",{"x":"4","y":"8","width":"16","height":"11.5","rx":"4"}],["path",{"d":"M12 8V5.2"}],["circle",{"cx":"12","cy":"4","r":"1.2"}],["path",{"d":"M2 12.5v3M22 12.5v3M10.2 16.8h3.6"}],["circle",{"cx":"9","cy":"13.2","r":"1.1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"15","cy":"13.2","r":"1.1","fill":"currentColor","stroke":"none"}]]);
+const Sparkles = /*#__PURE__*/ createIcon("sparkles", "Sparkles", [["path",{"d":"M10 4.5C10.39 8.98 12.02 10.61 16.5 11C12.02 11.39 10.39 13.02 10 17.5C9.61 13.02 7.98 11.39 3.5 11C7.98 10.61 9.61 8.98 10 4.5z"}],["path",{"d":"M18.5 2.5C18.65 4.22 19.28 4.85 21 5C19.28 5.15 18.65 5.78 18.5 7.5C18.35 5.78 17.72 5.15 16 5C17.72 4.85 18.35 4.22 18.5 2.5z"}],["path",{"d":"M17.5 15C17.68 17.07 18.43 17.82 20.5 18C18.43 18.18 17.68 18.93 17.5 21C17.32 18.93 16.57 18.18 14.5 18C16.57 17.82 17.32 17.07 17.5 15z"}]]);
+const NeuralNetwork = /*#__PURE__*/ createIcon("neural-network", "NeuralNetwork", [["circle",{"cx":"4.5","cy":"7","r":"1.9"}],["circle",{"cx":"4.5","cy":"17","r":"1.9"}],["circle",{"cx":"12","cy":"7","r":"1.9"}],["circle",{"cx":"12","cy":"17","r":"1.9"}],["circle",{"cx":"19.5","cy":"12","r":"1.9"}],["path",{"d":"M6.4 7L10.1 7"}],["path",{"d":"M5.64 8.52L10.86 15.48"}],["path",{"d":"M5.64 15.48L10.86 8.52"}],["path",{"d":"M6.4 17L10.1 17"}],["path",{"d":"M13.58 8.05L17.92 10.95"}],["path",{"d":"M13.58 15.95L17.92 13.05"}]]);
+const AiChip = /*#__PURE__*/ createIcon("ai-chip", "AiChip", [["rect",{"x":"6","y":"6","width":"12","height":"12","rx":"2.5"}],["path",{"d":"M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"}],["path",{"d":"M12 8.6C12.2 10.95 13.05 11.8 15.4 12C13.05 12.2 12.2 13.05 12 15.4C11.8 13.05 10.95 12.2 8.6 12C10.95 11.8 11.8 10.95 12 8.6z"}]]);
+const WandSparkle = /*#__PURE__*/ createIcon("wand-sparkle", "WandSparkle", [["path",{"d":"M4.5 19.5 14.2 9.8"}],["path",{"d":"M17.5 2.9C17.72 5.38 18.62 6.28 21.1 6.5C18.62 6.72 17.72 7.62 17.5 10.1C17.28 7.62 16.38 6.72 13.9 6.5C16.38 6.28 17.28 5.38 17.5 2.9z"}],["path",{"d":"M6 3.5v3M4.5 5h3"}],["path",{"d":"M19.5 15.5v3M18 17h3"}]]);
+const Robot = /*#__PURE__*/ createIcon("robot", "Robot", [["rect",{"x":"6.5","y":"6.5","width":"11","height":"7","rx":"2.5"}],["path",{"d":"M12 6.5V4.3"}],["circle",{"cx":"12","cy":"3.2","r":"1.1"}],["rect",{"x":"4.5","y":"15.5","width":"15","height":"5.5","rx":"2"}],["path",{"d":"M12 13.5v2M9.5 18.2h5"}],["circle",{"cx":"9.8","cy":"10","r":"1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"14.2","cy":"10","r":"1","fill":"currentColor","stroke":"none"}]]);
+const MagicCursor = /*#__PURE__*/ createIcon("magic-cursor", "MagicCursor", [["path",{"d":"M4 4 15.5 8.5l-5.2 1.8L8.5 15.5z"}],["path",{"d":"M18 14C18.18 16.07 18.93 16.82 21 17C18.93 17.18 18.18 17.93 18 20C17.82 17.93 17.07 17.18 15 17C17.07 16.82 17.82 16.07 18 14z"}],["path",{"d":"M19 2.5v3.5M17.25 4.25h3.5"}]]);
+const Model = /*#__PURE__*/ createIcon("model", "Model", [["path",{"d":"M12 3 4.5 7.5v9L12 21l7.5-4.5v-9z"}],["circle",{"cx":"12","cy":"12","r":"2.2"}],["path",{"d":"M12 9.8V3M10.1 13.1 4.5 16.5M13.9 13.1l5.6 3.4"}]]);
+const Workflow = /*#__PURE__*/ createIcon("workflow", "Workflow", [["rect",{"x":"3","y":"3.5","width":"6","height":"5","rx":"1.5"}],["rect",{"x":"15","y":"3.5","width":"6","height":"5","rx":"1.5"}],["rect",{"x":"9","y":"15.5","width":"6","height":"5","rx":"1.5"}],["path",{"d":"M6 8.5v1.5a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8.5M12 12v3.5"}]]);
+const HelpCircle = /*#__PURE__*/ createIcon("help-circle", "HelpCircle", [["circle",{"cx":"12","cy":"12","r":"9"}],["path",{"d":"M9.3 9.4a2.7 2.7 0 1 1 3.9 2.4c-.7.4-1.2 1-1.2 1.8"}],["circle",{"cx":"12","cy":"16.8","r":"1","fill":"currentColor","stroke":"none"}]]);
+const InfoCircle = /*#__PURE__*/ createIcon("info-circle", "InfoCircle", [["circle",{"cx":"12","cy":"12","r":"9"}],["path",{"d":"M12 11v5.5"}],["circle",{"cx":"12","cy":"7.8","r":"1","fill":"currentColor","stroke":"none"}]]);
+const AlertTriangle = /*#__PURE__*/ createIcon("alert-triangle", "AlertTriangle", [["path",{"d":"M12 3.5 2.8 19.5a1 1 0 0 0 .9 1.5h16.6a1 1 0 0 0 .9-1.5z"}],["path",{"d":"M12 9.5v4.5"}],["circle",{"cx":"12","cy":"17.2","r":"1","fill":"currentColor","stroke":"none"}]]);
+const Warning = /*#__PURE__*/ createIcon("warning", "Warning", [["path",{"d":"M8.6 3h6.8L21 8.6v6.8L15.4 21H8.6L3 15.4V8.6z"}],["path",{"d":"M12 8v5"}],["circle",{"cx":"12","cy":"16.3","r":"1","fill":"currentColor","stroke":"none"}]]);
+const Eye = /*#__PURE__*/ createIcon("eye", "Eye", [["path",{"d":"M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"}],["circle",{"cx":"12","cy":"12","r":"3"}]]);
+const EyeOff = /*#__PURE__*/ createIcon("eye-off", "EyeOff", [["path",{"d":"M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"}],["circle",{"cx":"12","cy":"12","r":"3"}],["path",{"d":"M4.5 4.5l15 15"}]]);
+const Copy = /*#__PURE__*/ createIcon("copy", "Copy", [["rect",{"x":"9","y":"9","width":"11.5","height":"11.5","rx":"2.5"}],["path",{"d":"M5.5 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v.5"}]]);
+const Clipboard = /*#__PURE__*/ createIcon("clipboard", "Clipboard", [["rect",{"x":"5","y":"4.5","width":"14","height":"16.5","rx":"2.5"}],["rect",{"x":"9","y":"2.5","width":"6","height":"4","rx":"1.5"}],["path",{"d":"M9 12h6M9 16h4"}]]);
+const Undo = /*#__PURE__*/ createIcon("undo", "Undo", [["path",{"d":"M9 14 4 9l5-5"}],["path",{"d":"M4 9h10.5a5.5 5.5 0 0 1 0 11H11"}]]);
+const Redo = /*#__PURE__*/ createIcon("redo", "Redo", [["path",{"d":"m15 14 5-5-5-5"}],["path",{"d":"M20 9H9.5a5.5 5.5 0 0 0 0 11H13"}]]);
+const Filter = /*#__PURE__*/ createIcon("filter", "Filter", [["path",{"d":"M3.5 5h17l-6.5 7.5V19l-4 2v-8.5z"}]]);
+const Sort = /*#__PURE__*/ createIcon("sort", "Sort", [["path",{"d":"M8 20V4m0 0L4.5 7.5M8 4l3.5 3.5"}],["path",{"d":"M16 4v16m0 0 3.5-3.5M16 20l-3.5-3.5"}]]);
+const ExternalLink = /*#__PURE__*/ createIcon("external-link", "ExternalLink", [["path",{"d":"M13 4h7v7"}],["path",{"d":"M20 4 11 13"}],["path",{"d":"M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"}]]);
+const MoreHorizontal = /*#__PURE__*/ createIcon("more-horizontal", "MoreHorizontal", [["circle",{"cx":"5","cy":"12","r":"1.4","fill":"currentColor","stroke":"none"}],["circle",{"cx":"12","cy":"12","r":"1.4","fill":"currentColor","stroke":"none"}],["circle",{"cx":"19","cy":"12","r":"1.4","fill":"currentColor","stroke":"none"}]]);
+const MoreVertical = /*#__PURE__*/ createIcon("more-vertical", "MoreVertical", [["circle",{"cx":"12","cy":"5","r":"1.4","fill":"currentColor","stroke":"none"}],["circle",{"cx":"12","cy":"12","r":"1.4","fill":"currentColor","stroke":"none"}],["circle",{"cx":"12","cy":"19","r":"1.4","fill":"currentColor","stroke":"none"}]]);
+const Command = /*#__PURE__*/ createIcon("command", "Command", [["path",{"d":"M9 9h6v6H9z"}],["path",{"d":"M9 9V6.5A2.5 2.5 0 1 0 6.5 9H9M15 9V6.5A2.5 2.5 0 1 1 17.5 9H15M9 15v2.5A2.5 2.5 0 1 1 6.5 15H9M15 15v2.5A2.5 2.5 0 1 0 17.5 15H15"}]]);
+const Keyboard = /*#__PURE__*/ createIcon("keyboard", "Keyboard", [["rect",{"x":"2.5","y":"5.5","width":"19","height":"13","rx":"2.5"}],["circle",{"cx":"6.5","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"10.2","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"13.8","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"17.5","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"6.5","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"10.2","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"13.8","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"17.5","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["path",{"d":"M8 15.8h8"}]]);
+const CalendarDays = /*#__PURE__*/ createIcon("calendar-days", "CalendarDays", [["rect",{"x":"3.5","y":"5","width":"17","height":"15.5","rx":"2.5"}],["path",{"d":"M8 3v4M16 3v4M3.5 10h17"}],["path",{"d":"M7.5 14h2M11 14h2M14.5 14h2M7.5 17.2h2M11 17.2h2"}]]);
 
-export const iconNames = ["message","code","analytics","wallet","image","video","zap","settings","search","bell","calendar","mail","folder","file-text","cloud-upload","cloud-download","link","user","users","lock","shield-check","trash","star","heart","map-pin","home","grid","toggle-on","toggle-off","refresh","share","download","plus-circle","minus-circle","check-circle","x-circle","arrow-left-circle","arrow-right-circle","arrow-up-circle","arrow-down-circle","crop","scan","chevron-down","chevron-up","chevron-left","chevron-right","menu","apps","brush","pencil","wand","box","layers","pie-chart","trending-up","bar-chart","send","bookmark","users-group"];
+export const iconNames = ["message","code","analytics","wallet","image","video","zap","settings","search","bell","calendar","mail","folder","file-text","cloud-upload","cloud-download","link","user","users","lock","shield-check","trash","star","heart","map-pin","home","grid","toggle-on","toggle-off","refresh","share","download","plus-circle","minus-circle","check-circle","x-circle","arrow-left-circle","arrow-right-circle","arrow-up-circle","arrow-down-circle","crop","scan","chevron-down","chevron-up","chevron-left","chevron-right","menu","apps","brush","pencil","wand","box","layers","pie-chart","trending-up","bar-chart","send","bookmark","users-group","brain","bot","sparkles","neural-network","ai-chip","wand-sparkle","robot","magic-cursor","model","workflow","help-circle","info-circle","alert-triangle","warning","eye","eye-off","copy","clipboard","undo","redo","filter","sort","external-link","more-horizontal","more-vertical","command","keyboard","calendar-days"];
 
 export {
   Message,
@@ -215,4 +243,60 @@ export {
   Bookmark as BookmarkIcon,
   UsersGroup,
   UsersGroup as UsersGroupIcon,
+  Brain,
+  Brain as BrainIcon,
+  Bot,
+  Bot as BotIcon,
+  Sparkles,
+  Sparkles as SparklesIcon,
+  NeuralNetwork,
+  NeuralNetwork as NeuralNetworkIcon,
+  AiChip,
+  AiChip as AiChipIcon,
+  WandSparkle,
+  WandSparkle as WandSparkleIcon,
+  Robot,
+  Robot as RobotIcon,
+  MagicCursor,
+  MagicCursor as MagicCursorIcon,
+  Model,
+  Model as ModelIcon,
+  Workflow,
+  Workflow as WorkflowIcon,
+  HelpCircle,
+  HelpCircle as HelpCircleIcon,
+  InfoCircle,
+  InfoCircle as InfoCircleIcon,
+  AlertTriangle,
+  AlertTriangle as AlertTriangleIcon,
+  Warning,
+  Warning as WarningIcon,
+  Eye,
+  Eye as EyeIcon,
+  EyeOff,
+  EyeOff as EyeOffIcon,
+  Copy,
+  Copy as CopyIcon,
+  Clipboard,
+  Clipboard as ClipboardIcon,
+  Undo,
+  Undo as UndoIcon,
+  Redo,
+  Redo as RedoIcon,
+  Filter,
+  Filter as FilterIcon,
+  Sort,
+  Sort as SortIcon,
+  ExternalLink,
+  ExternalLink as ExternalLinkIcon,
+  MoreHorizontal,
+  MoreHorizontal as MoreHorizontalIcon,
+  MoreVertical,
+  MoreVertical as MoreVerticalIcon,
+  Command,
+  Command as CommandIcon,
+  Keyboard,
+  Keyboard as KeyboardIcon,
+  CalendarDays,
+  CalendarDays as CalendarDaysIcon,
 };
