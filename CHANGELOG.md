@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+
+- New license: free to use in any personal or commercial project, but the icons may not be sold or republished as an icon set. Versions 0.1.0 and 0.2.0 keep the license they were released with.
+- Remove repository links from the package.
+
 ## 0.2.0
 
 - Add an AI category: `brain`, `bot`, `sparkles`, `neural-network`, `ai-chip`, `wand-sparkle`, `robot`, `magic-cursor`, `model`, `workflow`.

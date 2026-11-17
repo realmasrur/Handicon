@@ -25,11 +25,22 @@ git config --global user.email "you@example.com"
 
 ## 3. Get the code
 
+The repository is private, so Git needs to know it is you. In Termux, sign in once with the GitHub tool:
+
 ```bash
-git clone https://github.com/realmasrur/Handicon
+pkg install gh
+gh auth login
+```
+
+Choose GitHub.com, HTTPS, and "Login with a web browser". It shows a code and a link. Open the link on your phone, enter the code and approve. Then:
+
+```bash
+gh repo clone realmasrur/Handicon
 cd Handicon
 npm install
 ```
+
+If you already have the folder, run `git pull` inside it. After `gh auth login`, `git pull` and `git push` work without asking again.
 
 ## 4. Check the package name
 
@@ -100,7 +111,7 @@ Within a minute, `npm install handicon` works from anywhere. Your package page i
    ```
    Use `patch` for fixes (0.2.0 to 0.2.1), `minor` for new icons (0.2.0 to 0.3.0), and `major` for changes that break existing code.
 4. `npm test`, then `npm run publish:pkg`.
-5. Save it on GitHub:
+5. Save it on GitHub (you stay signed in from step 3):
    ```bash
    git add -A
    git commit -m "Release 0.3.0"
@@ -111,7 +122,7 @@ Within a minute, `npm install handicon` works from anywhere. Your package page i
 ## 9. Put the website online (free)
 
 1. Go to https://vercel.com and sign in with GitHub.
-2. Choose **Add New**, then **Project**, and import `Handicon`.
+2. Choose **Add New**, then **Project**, and import `Handicon`. Private repositories work on Vercel's free Hobby plan when they belong to your personal account. If `Handicon` is not listed, open **Adjust GitHub App Permissions** and allow Vercel to see it.
 3. Leave the settings as they are. Vercel detects Next.js, and `npm run build` already generates the icons first.
 4. Click **Deploy**. You get a public address like `handicon.vercel.app`.
 5. Put that address in the `homepage` field of `package/package.json` so it shows on your npm page, then release a patch.
@@ -120,5 +131,5 @@ Within a minute, `npm install handicon` works from anywhere. Your package page i
 
 - Keep the README examples working. They are the first thing people read on npm.
 - Keep icon names stable. Renaming an icon breaks everyone's imports, so treat it as a `major` change.
-- Answer issues on GitHub. A package that replies gets used.
-- Show the install command and a live demo at the top of the GitHub README.
+- Keep the changelog current so people know what a new version changes.
+- Because the repository is private, the npm page has no link back to it. Put a way to reach you (your website or an email) in the package README if you want bug reports.

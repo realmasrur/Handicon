@@ -3,8 +3,6 @@ import { FooterInstall } from "./FooterInstall";
 import { LogoMark } from "./Logo";
 import { SvgIcon } from "./SvgIcon";
 
-const GITHUB_URL = "https://github.com/realmasrur/Handicon";
-
 // A few icons shown as a quiet row of proof above the sign-off.
 const SAMPLE = ["heart", "bell", "wand", "cloud-upload", "calendar", "shield-check", "pencil", "zap", "map-pin", "layers"];
 const sample = SAMPLE.map((n) => icons.find((i) => i.name === n)).filter((i): i is (typeof icons)[number] => Boolean(i));
@@ -40,14 +38,11 @@ export function Footer() {
           <nav className="footer__links" aria-label="Footer">
             <a href="#icons">Icons</a>
             <a href="#usage">Usage</a>
-            <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
           </nav>
         </div>
 
         <div className="footer__bottom">
-          <p>Free for personal and commercial projects under the MIT license.</p>
+          <p>Free to use in any project. Selling or republishing the icons is not allowed.</p>
           <p className="footer__credit">
             <span>A product of</span>
             {/* eslint-disable-next-line @next/next/no-img-element */}

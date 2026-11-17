@@ -1,16 +1,51 @@
-MIT License
+Handicon License
 
-Copyright (c) 2026 Handicon contributors
+Copyright (c) 2026 mecozx. All rights reserved except as granted below.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This license applies to Handicon version 0.2.1 and later (the "Software"),
+which includes the icon artwork, the SVG files and the source code. Earlier
+versions (0.1.0 and 0.2.0) stay available under the license they were
+released with.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. What you can do
+
+You may use the Software for free in any project, personal or commercial,
+including client work and paid products. You may copy and change the icons
+and code as your project needs, and ship them as part of your finished
+website, app, product or document.
+
+2. What you cannot do
+
+You may not:
+
+  a) sell, resell, rent, lease, sublicense or charge for the Software, or any
+     part of it, on its own;
+
+  b) redistribute the Software, or a substantial part of it, as a standalone
+     icon set, icon library, package, template, kit or collection, whether
+     free or paid and whether changed or not. This includes publishing it to
+     npm or any other package registry, code host or marketplace;
+
+  c) present the Software or its icons as your own work, or remove this
+     license or the copyright notice from the copies of the Software that you
+     keep in your project.
+
+3. Credit
+
+Credit is not required, but it is appreciated.
+
+4. Ownership
+
+mecozx keeps ownership of the Software. This license does not transfer any
+ownership. It also does not grant any right to the names or logos of
+"Handicon" or "mecozx".
+
+5. If you break these terms
+
+Your rights under this license end. Other people who follow these terms are
+not affected.
+
+6. No warranty
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

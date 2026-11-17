@@ -94,10 +94,8 @@ The files use `currentColor`, so set `color` in CSS to recolor them when you inl
 - **Design** (6): `crop`, `scan`, `brush`, `pencil`, `wand`, `layers`
 <!-- icons:end -->
 
-## Contributing
-
-Icons are drawn in `icons/source.mjs` in the [repository](https://github.com/realmasrur/Handicon). Open an issue to request one.
-
 ## License
 
-MIT
+Free to use in any personal or commercial project, including client work and paid products. Selling the icons, or republishing them as your own icon set or package, is not allowed. See the [LICENSE](./LICENSE) file for the full terms.
+
+A product of mecozx.

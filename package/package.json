@@ -1,6 +1,6 @@
 {
   "name": "handicon",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Soft, rounded icons for React. Includes AI and essential UI icons, with size, stroke and color as props.",
   "keywords": [
     "icons",
@@ -14,15 +14,7 @@
     "ui-icons",
     "handicon"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/realmasrur/Handicon.git"
-  },
-  "homepage": "https://github.com/realmasrur/Handicon#readme",
-  "bugs": {
-    "url": "https://github.com/realmasrur/Handicon/issues"
-  },
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
@@ -37,7 +29,12 @@
     "./svg/*": "./svg/*",
     "./package.json": "./package.json"
   },
-  "files": ["dist", "svg", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "svg",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "prepublishOnly": "node ../scripts/build-icons.mjs"
   },
