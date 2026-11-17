@@ -3,6 +3,7 @@ import { Explorer } from "@/components/Explorer";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { InstallCommand } from "@/components/InstallCommand";
+import { PromoBar } from "@/components/PromoBar";
 import { Stage } from "@/components/Stage";
 import { icons } from "@/lib/icons";
 
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     <>
       <a className="skip-link" href="#icons">Skip to the icons</a>
+      <PromoBar />
       <Header />
       <main id="top">
         <section className="hero">
