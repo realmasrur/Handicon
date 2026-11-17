@@ -20,7 +20,7 @@ export function LogoMark({ size = 28 }: { size?: number }) {
 
 export function Logo() {
   return (
-    <a className="logo" href="#top" aria-label="Handicon, back to top">
+    <a className="logo" href="/#top" aria-label="Handicon, back to top">
       <LogoMark />
       <span className="logo__word">Handicon</span>
     </a>

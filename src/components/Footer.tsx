@@ -36,8 +36,11 @@ export function Footer() {
           </div>
 
           <nav className="footer__links" aria-label="Footer">
-            <a href="#icons">Icons</a>
-            <a href="#usage">Usage</a>
+            <a href="/#icons">Icons</a>
+            <a href="/#usage">Usage</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/license">License</a>
           </nav>
         </div>
 
