@@ -1,6 +1,6 @@
 {
   "name": "handicon",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Soft, rounded icons for React. Includes AI and essential UI icons, with size, stroke and color as props.",
   "keywords": [
     "icons",

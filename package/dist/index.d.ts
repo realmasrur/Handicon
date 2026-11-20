@@ -100,7 +100,23 @@ export type IconName =
   | "more-vertical"
   | "command"
   | "keyboard"
-  | "calendar-days";
+  | "calendar-days"
+  | "briefcase"
+  | "building"
+  | "receipt"
+  | "invoice"
+  | "calculator"
+  | "bank"
+  | "coins"
+  | "project-timeline"
+  | "kanban-board"
+  | "task-list"
+  | "milestone"
+  | "meeting"
+  | "presentation"
+  | "contract"
+  | "signature"
+  | "fingerprint";
 
 export declare const iconNames: readonly IconName[];
 
@@ -278,3 +294,35 @@ export declare const Keyboard: HandiconComponent;
 export declare const KeyboardIcon: HandiconComponent;
 export declare const CalendarDays: HandiconComponent;
 export declare const CalendarDaysIcon: HandiconComponent;
+export declare const Briefcase: HandiconComponent;
+export declare const BriefcaseIcon: HandiconComponent;
+export declare const Building: HandiconComponent;
+export declare const BuildingIcon: HandiconComponent;
+export declare const Receipt: HandiconComponent;
+export declare const ReceiptIcon: HandiconComponent;
+export declare const Invoice: HandiconComponent;
+export declare const InvoiceIcon: HandiconComponent;
+export declare const Calculator: HandiconComponent;
+export declare const CalculatorIcon: HandiconComponent;
+export declare const Bank: HandiconComponent;
+export declare const BankIcon: HandiconComponent;
+export declare const Coins: HandiconComponent;
+export declare const CoinsIcon: HandiconComponent;
+export declare const ProjectTimeline: HandiconComponent;
+export declare const ProjectTimelineIcon: HandiconComponent;
+export declare const KanbanBoard: HandiconComponent;
+export declare const KanbanBoardIcon: HandiconComponent;
+export declare const TaskList: HandiconComponent;
+export declare const TaskListIcon: HandiconComponent;
+export declare const Milestone: HandiconComponent;
+export declare const MilestoneIcon: HandiconComponent;
+export declare const Meeting: HandiconComponent;
+export declare const MeetingIcon: HandiconComponent;
+export declare const Presentation: HandiconComponent;
+export declare const PresentationIcon: HandiconComponent;
+export declare const Contract: HandiconComponent;
+export declare const ContractIcon: HandiconComponent;
+export declare const Signature: HandiconComponent;
+export declare const SignatureIcon: HandiconComponent;
+export declare const Fingerprint: HandiconComponent;
+export declare const FingerprintIcon: HandiconComponent;

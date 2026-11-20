@@ -23,15 +23,11 @@ export default function PrivacyPage() {
       </p>
 
       <h2>What the site saves on your device</h2>
-      <p>The site keeps two small settings in your browser’s local storage:</p>
-      <ul>
-        <li>Your theme choice, light or dark.</li>
-        <li>Whether you closed the announcement bar at the top of the page.</li>
-      </ul>
       <p>
-        These stay on your device and are never sent to us. They only remember your choices, and we do
-        not use them to identify or follow you. You can remove them at any time by clearing your
-        browser’s site data.
+        The site keeps one small setting in your browser’s local storage: your theme choice, light or
+        dark. It stays on your device and is never sent to us. It only remembers your choice, and we do
+        not use it to identify or follow you. You can remove it at any time by clearing your browser’s
+        site data.
       </p>
 
       <h2>Fonts, scripts and images</h2>

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2
+
+- Add a Business category: `briefcase`, `building`, `receipt`, `invoice`, `calculator`, `bank`, `coins`, `project-timeline`, `kanban-board`, `task-list`, `milestone`, `meeting`, `presentation`, `contract`, `signature`.
+- Add `fingerprint` to Account.
+- Website: remove the launch banner.
+
 ## 0.2.1
 
 - New license: free to use in any personal or commercial project, but the icons may not be sold or republished as an icon set. Versions 0.1.0 and 0.2.0 keep the license they were released with.

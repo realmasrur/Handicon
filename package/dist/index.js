@@ -121,8 +121,24 @@ const MoreVertical = /*#__PURE__*/ createIcon("more-vertical", "MoreVertical", [
 const Command = /*#__PURE__*/ createIcon("command", "Command", [["path",{"d":"M9 9h6v6H9z"}],["path",{"d":"M9 9V6.5A2.5 2.5 0 1 0 6.5 9H9M15 9V6.5A2.5 2.5 0 1 1 17.5 9H15M9 15v2.5A2.5 2.5 0 1 1 6.5 15H9M15 15v2.5A2.5 2.5 0 1 0 17.5 15H15"}]]);
 const Keyboard = /*#__PURE__*/ createIcon("keyboard", "Keyboard", [["rect",{"x":"2.5","y":"5.5","width":"19","height":"13","rx":"2.5"}],["circle",{"cx":"6.5","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"10.2","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"13.8","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"17.5","cy":"9.5","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"6.5","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"10.2","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"13.8","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["circle",{"cx":"17.5","cy":"12.7","r":"0.9","fill":"currentColor","stroke":"none"}],["path",{"d":"M8 15.8h8"}]]);
 const CalendarDays = /*#__PURE__*/ createIcon("calendar-days", "CalendarDays", [["rect",{"x":"3.5","y":"5","width":"17","height":"15.5","rx":"2.5"}],["path",{"d":"M8 3v4M16 3v4M3.5 10h17"}],["path",{"d":"M7.5 14h2M11 14h2M14.5 14h2M7.5 17.2h2M11 17.2h2"}]]);
+const Briefcase = /*#__PURE__*/ createIcon("briefcase", "Briefcase", [["rect",{"x":"3","y":"7.5","width":"18","height":"12.5","rx":"2.5"}],["path",{"d":"M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5M3 13h18"}],["rect",{"x":"10.5","y":"11.5","width":"3","height":"3","rx":"0.8"}]]);
+const Building = /*#__PURE__*/ createIcon("building", "Building", [["rect",{"x":"4.5","y":"3","width":"11","height":"18","rx":"1.5"}],["path",{"d":"M15.5 9.5h3a1.5 1.5 0 0 1 1.5 1.5v10M2.5 21h19M8 7h4M8 10.5h4M8 14h4M8.5 21v-3h3v3"}]]);
+const Receipt = /*#__PURE__*/ createIcon("receipt", "Receipt", [["path",{"d":"M5.5 3.5h13V21l-2.17-1.5-2.16 1.5L12 19.5 9.83 21l-2.16-1.5L5.5 21z"}],["path",{"d":"M9 8h6M9 11.5h6M9 15h3"}]]);
+const Invoice = /*#__PURE__*/ createIcon("invoice", "Invoice", [["rect",{"x":"5","y":"3","width":"14","height":"18","rx":"2.5"}],["path",{"d":"M8.5 7.5h4M8.5 11h2M13.5 11h2M8.5 14h2M13.5 14h2M8.5 17.5h7"}]]);
+const Calculator = /*#__PURE__*/ createIcon("calculator", "Calculator", [["rect",{"x":"5","y":"3","width":"14","height":"18","rx":"2.5"}],["rect",{"x":"8","y":"6","width":"8","height":"3.5","rx":"1"}],["circle",{"cx":"9","cy":"13.2","r":"1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"12","cy":"13.2","r":"1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"15","cy":"13.2","r":"1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"9","cy":"17","r":"1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"12","cy":"17","r":"1","fill":"currentColor","stroke":"none"}],["circle",{"cx":"15","cy":"17","r":"1","fill":"currentColor","stroke":"none"}]]);
+const Bank = /*#__PURE__*/ createIcon("bank", "Bank", [["path",{"d":"M3.5 9.5 12 4l8.5 5.5z"}],["path",{"d":"M7.5 13v7.5M12 13v7.5M16.5 13v7.5M3.5 20.5h17"}]]);
+const Coins = /*#__PURE__*/ createIcon("coins", "Coins", [["circle",{"cx":"9","cy":"9","r":"5.5"}],["path",{"d":"M9 6.8v4.4"}],["path",{"d":"M14.47 9.6A5.5 5.5 0 1 1 10.03 14.4"}]]);
+const ProjectTimeline = /*#__PURE__*/ createIcon("project-timeline", "ProjectTimeline", [["rect",{"x":"4","y":"4.5","width":"9","height":"3.5","rx":"1.2"}],["rect",{"x":"8","y":"10.5","width":"10","height":"3.5","rx":"1.2"}],["rect",{"x":"12","y":"16.5","width":"8","height":"3.5","rx":"1.2"}]]);
+const KanbanBoard = /*#__PURE__*/ createIcon("kanban-board", "KanbanBoard", [["rect",{"x":"3","y":"4","width":"18","height":"16","rx":"2.5"}],["path",{"d":"M8 8v7M12 8v9.5M16 8v4"}]]);
+const TaskList = /*#__PURE__*/ createIcon("task-list", "TaskList", [["path",{"d":"m3.8 6.8 1.5 1.5L8 5.2M3.8 12.3l1.5 1.5L8 10.7M11.5 6.5H20M11.5 12H20M11.5 17.5H17"}],["rect",{"x":"4","y":"15.6","width":"3.8","height":"3.8","rx":"1"}]]);
+const Milestone = /*#__PURE__*/ createIcon("milestone", "Milestone", [["path",{"d":"M5.5 21.5V3.5"}],["path",{"d":"M5.5 4.5h13l-3 4 3 4h-13"}]]);
+const Meeting = /*#__PURE__*/ createIcon("meeting", "Meeting", [["circle",{"cx":"7","cy":"7.5","r":"2.3"}],["path",{"d":"M3 15c0-2.4 1.8-4 4-4s4 1.6 4 4"}],["circle",{"cx":"17","cy":"7.5","r":"2.3"}],["path",{"d":"M13 15c0-2.4 1.8-4 4-4s4 1.6 4 4"}],["path",{"d":"M3 18.5h18M5.5 18.5V21M18.5 18.5V21"}]]);
+const Presentation = /*#__PURE__*/ createIcon("presentation", "Presentation", [["rect",{"x":"3","y":"4","width":"18","height":"11","rx":"2"}],["path",{"d":"m6.5 11.5 3.5-3.5 2.5 2.5 5-3.5M12 15v2.5M7.5 21l4.5-3.5 4.5 3.5"}]]);
+const Contract = /*#__PURE__*/ createIcon("contract", "Contract", [["rect",{"x":"5","y":"3","width":"14","height":"18","rx":"2.5"}],["path",{"d":"M8.5 7.5h7M8.5 10.5h7M8.5 13.5h3"}],["path",{"d":"M8.5 18c1-2 2-2 2.5-.5s1.4 1 2.2-.2c.5-.7 1.2-.7 2 .2"}]]);
+const Signature = /*#__PURE__*/ createIcon("signature", "Signature", [["path",{"d":"M3 20h18"}],["path",{"d":"M4 16c1.4-3.8 2.7-6.5 3.9-6.5 1 0 .6 3.2 0 4.8 1.6-2.4 3-3.4 3.8-2.6.6.7-.2 2.4.8 2.2 1.2-.2 1.6-1.9 3.4-1.9 1 0 1.4.8 2.1.8"}]]);
+const Fingerprint = /*#__PURE__*/ createIcon("fingerprint", "Fingerprint", [["path",{"d":"M3.8 10.2a8.2 8.2 0 0 1 16.4 0v2.3"}],["path",{"d":"M7 20c-.4-1.5-.6-3.2-.6-5v-4.3a5.6 5.6 0 0 1 11.2 0V13"}],["path",{"d":"M10.2 21c-.3-1.8-.4-3.4-.4-5.4v-4.9a2.2 2.2 0 0 1 4.4 0v3.8c0 1.8.3 3.2.7 4.7"}],["path",{"d":"M3.9 15c.2 1.8.6 3.2 1.4 4.6M20.1 15.5c-.2 2-.6 3.3-1.2 4.5"}]]);
 
-export const iconNames = ["message","code","analytics","wallet","image","video","zap","settings","search","bell","calendar","mail","folder","file-text","cloud-upload","cloud-download","link","user","users","lock","shield-check","trash","star","heart","map-pin","home","grid","toggle-on","toggle-off","refresh","share","download","plus-circle","minus-circle","check-circle","x-circle","arrow-left-circle","arrow-right-circle","arrow-up-circle","arrow-down-circle","crop","scan","chevron-down","chevron-up","chevron-left","chevron-right","menu","apps","brush","pencil","wand","box","layers","pie-chart","trending-up","bar-chart","send","bookmark","users-group","brain","bot","sparkles","neural-network","ai-chip","wand-sparkle","robot","magic-cursor","model","workflow","help-circle","info-circle","alert-triangle","warning","eye","eye-off","copy","clipboard","undo","redo","filter","sort","external-link","more-horizontal","more-vertical","command","keyboard","calendar-days"];
+export const iconNames = ["message","code","analytics","wallet","image","video","zap","settings","search","bell","calendar","mail","folder","file-text","cloud-upload","cloud-download","link","user","users","lock","shield-check","trash","star","heart","map-pin","home","grid","toggle-on","toggle-off","refresh","share","download","plus-circle","minus-circle","check-circle","x-circle","arrow-left-circle","arrow-right-circle","arrow-up-circle","arrow-down-circle","crop","scan","chevron-down","chevron-up","chevron-left","chevron-right","menu","apps","brush","pencil","wand","box","layers","pie-chart","trending-up","bar-chart","send","bookmark","users-group","brain","bot","sparkles","neural-network","ai-chip","wand-sparkle","robot","magic-cursor","model","workflow","help-circle","info-circle","alert-triangle","warning","eye","eye-off","copy","clipboard","undo","redo","filter","sort","external-link","more-horizontal","more-vertical","command","keyboard","calendar-days","briefcase","building","receipt","invoice","calculator","bank","coins","project-timeline","kanban-board","task-list","milestone","meeting","presentation","contract","signature","fingerprint"];
 
 export {
   Message,
@@ -299,4 +315,36 @@ export {
   Keyboard as KeyboardIcon,
   CalendarDays,
   CalendarDays as CalendarDaysIcon,
+  Briefcase,
+  Briefcase as BriefcaseIcon,
+  Building,
+  Building as BuildingIcon,
+  Receipt,
+  Receipt as ReceiptIcon,
+  Invoice,
+  Invoice as InvoiceIcon,
+  Calculator,
+  Calculator as CalculatorIcon,
+  Bank,
+  Bank as BankIcon,
+  Coins,
+  Coins as CoinsIcon,
+  ProjectTimeline,
+  ProjectTimeline as ProjectTimelineIcon,
+  KanbanBoard,
+  KanbanBoard as KanbanBoardIcon,
+  TaskList,
+  TaskList as TaskListIcon,
+  Milestone,
+  Milestone as MilestoneIcon,
+  Meeting,
+  Meeting as MeetingIcon,
+  Presentation,
+  Presentation as PresentationIcon,
+  Contract,
+  Contract as ContractIcon,
+  Signature,
+  Signature as SignatureIcon,
+  Fingerprint,
+  Fingerprint as FingerprintIcon,
 };

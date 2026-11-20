@@ -5,4 +5,4 @@ export const OPERATOR = "mecozx";
 export const CONTACT_EMAIL = "";
 
 /** Update this date whenever you change the privacy policy or the terms. */
-export const LEGAL_UPDATED = "17 November 2026";
+export const LEGAL_UPDATED = "20 November 2026";

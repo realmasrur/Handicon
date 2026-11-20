@@ -1,6 +1,6 @@
 # Handicon
 
-Soft, rounded icons for React. 87 icons on a 24px grid, including a set for AI products. Size, stroke and color are props, and icons you don't import stay out of your bundle.
+Soft, rounded icons for React. 103 icons on a 24px grid, including a set for AI products. Size, stroke and color are props, and icons you don't import stay out of your bundle.
 
 ```bash
 npm install handicon
@@ -82,11 +82,12 @@ The files use `currentColor`, so set `color` in CSS to recolor them when you inl
 
 <!-- icons:start -->
 - **AI** (10): `brain`, `bot`, `sparkles`, `neural-network`, `ai-chip`, `wand-sparkle`, `robot`, `magic-cursor`, `model`, `workflow`
+- **Business** (15): `briefcase`, `building`, `receipt`, `invoice`, `calculator`, `bank`, `coins`, `project-timeline`, `kanban-board`, `task-list`, `milestone`, `meeting`, `presentation`, `contract`, `signature`
 - **Communication** (6): `message`, `bell`, `mail`, `link`, `share`, `send`
 - **Files** (5): `folder`, `file-text`, `cloud-upload`, `cloud-download`, `download`
 - **Data** (4): `analytics`, `pie-chart`, `trending-up`, `bar-chart`
 - **Media** (2): `image`, `video`
-- **Account** (7): `wallet`, `settings`, `user`, `users`, `lock`, `shield-check`, `users-group`
+- **Account** (8): `wallet`, `settings`, `user`, `users`, `lock`, `shield-check`, `users-group`, `fingerprint`
 - **Developer** (5): `code`, `zap`, `box`, `command`, `keyboard`
 - **Interface** (23): `search`, `calendar`, `star`, `heart`, `map-pin`, `home`, `grid`, `toggle-on`, `toggle-off`, `menu`, `apps`, `bookmark`, `help-circle`, `info-circle`, `alert-triangle`, `warning`, `eye`, `eye-off`, `filter`, `sort`, `more-horizontal`, `more-vertical`, `calendar-days`
 - **Actions** (10): `trash`, `refresh`, `plus-circle`, `minus-circle`, `check-circle`, `x-circle`, `copy`, `clipboard`, `undo`, `redo`

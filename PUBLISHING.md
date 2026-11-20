@@ -66,7 +66,7 @@ To try it as a real install, in a separate folder:
 npm pack ./package
 mkdir ~/handicon-test && cd ~/handicon-test
 npm init -y
-npm install react react-dom ~/Handicon/handicon-0.2.0.tgz
+npm install react react-dom ~/Handicon/handicon-*.tgz
 node -e "const h = require('handicon'); console.log(h.iconNames.length, 'icons')"
 ```
 
